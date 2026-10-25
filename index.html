@@ -1,0 +1,1195 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#09579B">
+<title>هدية جناح جوار الصفوة | مؤتمر ومعرض الحج 2026</title>
+<meta name="description" content="هدية ضيافة من جناح جوار الصفوة لزوار مؤتمر ومعرض الحج 2026: قسيمة خصم 50% على الطلب كله في رونق كافيه.">
+<style>
+/* ===== Fonts (bundled Cairo, variable 200 to 1000) ===== */
+@font-face{font-family:'Cairo';src:url('assets/fonts/cairo-arabic.woff2') format('woff2');font-weight:200 1000;font-style:normal;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-08FF,U+FB50-FDFF,U+FE70-FEFF,U+200C-200E,U+2010-2011,U+204F,U+2E41}
+@font-face{font-family:'Cairo';src:url('assets/fonts/cairo-latin.woff2') format('woff2');font-weight:200 1000;font-style:normal;font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+/* ===== Tokens: Jewar (page and envelope) + Rawnaq (voucher only) ===== */
+:root{
+  --rq-blue:#09579B;--rq-blue-700:#07477F;--rq-blue-800:#053863;
+  --rq-blue-50:#F1F6FB;--rq-blue-100:#E1ECF6;--rq-blue-200:#C5D9EC;
+  --rq-gold:#D8A703;
+  --rq-ink:#15181D;--rq-ink-2:#4B5A6B;--rq-line:#E5E5E5;--rq-field:#8593A5;
+  --rq-err:#B42318;--rq-err-bg:#FEF3F2;
+  --rq-espresso:#36170F;--rq-brown:#56351F;--rq-coffee:#7A4C28;--rq-coffee-2:#6E4630;
+  --rq-caramel:#BA9048;--rq-caramel-lt:#E0BE86;--rq-cream:#F6F0EA;--rq-cream-2:#EDE2D4;--rq-cream-line:#E2D3C0;
+  --rq-on-dark:#FFF8EF;--rq-on-dark-2:#F3DDB5;
+  --rq-shadow:0 1px 2px rgba(16,24,40,.05),0 12px 32px -14px rgba(16,24,40,.16);
+}
+
+/* ===== Base ===== */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;background:#fff;overflow-x:hidden}
+body{margin:0;background:#fff;color:var(--rq-ink);font-family:'Cairo','Segoe UI',Tahoma,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{display:block}
+.rq-page{position:relative;color:var(--rq-ink);overflow-x:clip}
+.rq-defs{position:absolute;width:0;height:0;overflow:hidden}
+.rq-sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.rq-page [tabindex="-1"]:focus{outline:none}
+.rq-page a:focus-visible,.rq-page button:focus-visible{outline:3px solid var(--rq-blue);outline-offset:3px}
+.rq-nowrap{white-space:nowrap}
+[hidden]{display:none!important}
+
+/* State visibility */
+.rq-page[data-state="invite"] [data-when]:not([data-when~="invite"]),
+.rq-page[data-state="open"] [data-when]:not([data-when~="open"]),
+.rq-page[data-state="voucher"] [data-when]:not([data-when~="voucher"]){display:none!important}
+
+/* ===== Layout: fills the iframe (780 px phones, 820 px from 768 px) ===== */
+.rq-main{min-height:100vh;display:flex;flex-direction:column;padding:14px 16px}
+.rq-eyebrow{display:flex;align-items:center;flex-wrap:wrap;gap:4px 8px;margin:0 0 4px;font-size:13.5px;line-height:1.5;font-weight:700;color:var(--rq-blue)}
+.rq-eyebrow svg{width:13px;height:13px;color:var(--rq-gold);flex:none}
+/* Phones: top-aligned so the button stays above the fold under the site header */
+.rq-grid{width:100%;max-width:560px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.rq-intro{order:1}
+.rq-stagecol{order:2;min-width:0}
+.rq-panelcol{order:3;min-width:0}
+.rq-steps{order:4}
+
+/* Intro */
+.rq-h1{margin:0;font-size:26px;line-height:1.35;font-weight:800;color:var(--rq-ink);text-wrap:balance}
+.rq-lead{margin:6px 0 0;font-size:15.5px;line-height:1.65;color:var(--rq-ink-2);text-wrap:pretty}
+
+/* Progress steps */
+.rq-steps{list-style:none;margin:0;padding:0;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;row-gap:6px;font-size:13.5px;color:var(--rq-ink-2)}
+.rq-steps li{display:flex;align-items:center;gap:7px;white-space:nowrap;font-weight:600}
+.rq-steps li+li::before{content:"";display:block;width:18px;height:1.5px;margin-inline:6px 4px;background:#C9D3DD;border-radius:2px}
+.rq-step-dot{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;border:1.5px solid #B9C5D1;font-size:12.5px;font-weight:800;color:var(--rq-ink-2);background:#fff;line-height:1}
+.rq-step-dot svg{display:none;width:14px;height:14px}
+.rq-steps li.rq-is-current{color:var(--rq-ink);font-weight:800}
+.rq-steps li.rq-is-current .rq-step-dot{background:var(--rq-blue);border-color:var(--rq-blue);color:#fff}
+.rq-steps li.rq-is-done{color:var(--rq-ink)}
+.rq-steps li.rq-is-done .rq-step-dot{background:var(--rq-blue-100);border-color:var(--rq-blue-100);color:var(--rq-blue)}
+.rq-steps li.rq-is-done .rq-step-dot span{display:none}
+.rq-steps li.rq-is-done .rq-step-dot svg{display:block}
+
+/* ===== Stage (Jewar envelope) ===== */
+.rq-stagebox{--rq-w:min(336px,calc(100vw - 56px));position:relative;border-radius:20px;border:1px solid var(--rq-blue-100);background:radial-gradient(120% 90% at 50% 22%,#fff 0%,var(--rq-blue-50) 60%,#E5EEF7 100%);overflow:hidden;padding:6px 12px}
+.rq-page[data-state="invite"] .rq-stagebox{cursor:pointer}
+.rq-stagebox-pattern{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;-webkit-mask-image:radial-gradient(closest-side,transparent 55%,#000 100%);mask-image:radial-gradient(closest-side,transparent 55%,#000 100%)}
+.rq-stage{position:relative;height:calc(var(--rq-w) * .9);transition:height 800ms cubic-bezier(.16,1,.3,1) 660ms}
+
+.rq-spark{position:absolute;color:var(--rq-gold);pointer-events:none;transition:opacity 260ms ease,transform 360ms ease}
+.rq-spark svg{width:100%;height:100%;animation:rq-twinkle 3.2s ease-in-out 1.5}
+.rq-spark-1{width:16px;height:16px;left:13%;top:9%}
+.rq-spark-2{width:22px;height:22px;left:80%;top:4%}
+.rq-spark-2 svg{animation-delay:-1.2s}
+.rq-spark-3{width:11px;height:11px;left:89%;top:15%}
+.rq-spark-3 svg{animation-delay:-2.1s}
+.rq-spark-4{width:10px;height:10px;left:25%;top:2%}
+.rq-spark-4 svg{animation-delay:-.6s}
+.rq-page[data-state="open"] .rq-spark{opacity:0;transform:scale(.4)}
+@keyframes rq-twinkle{0%,100%{opacity:.45;transform:scale(.82)}50%{opacity:1;transform:scale(1)}}
+.rq-burst{position:absolute;z-index:7;width:18px;height:18px;color:var(--rq-gold);opacity:0;pointer-events:none}
+.rq-burst svg{width:100%;height:100%}
+.rq-burst-1{left:calc(50% - var(--rq-w) * .5);top:calc(var(--rq-w) * .03)}
+.rq-burst-2{left:calc(50% + var(--rq-w) * .44);top:calc(var(--rq-w) * .1);width:13px;height:13px}
+
+.rq-env{position:absolute;left:50%;bottom:calc(var(--rq-w) * .067);width:var(--rq-w);margin-left:calc(var(--rq-w) / -2);aspect-ratio:3/2;perspective:1200px;perspective-origin:50% 0;font-size:calc(var(--rq-w) * .045);line-height:1.35;transform-origin:50% 0;transition:bottom 800ms cubic-bezier(.16,1,.3,1) 660ms,transform 800ms cubic-bezier(.16,1,.3,1) 660ms}
+.rq-env::before{content:"";position:absolute;left:6%;right:6%;bottom:-9%;height:16%;background:radial-gradient(closest-side,rgba(5,40,75,.26),rgba(5,40,75,0));z-index:0}
+.rq-env-back{position:absolute;inset:0;width:100%;height:100%;z-index:1;border-radius:.7em;box-shadow:0 1.3em 2.2em -1.1em rgba(4,38,72,.5)}
+.rq-env-pocket{position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none}
+.rq-env-addr{position:absolute;z-index:4;left:0;right:0;bottom:7.5%;text-align:center;color:#fff;pointer-events:none}
+.rq-env-addr b{display:block;font-size:1em;font-weight:800}
+.rq-env-addr span{display:block;font-size:.74em;font-weight:600;color:rgba(255,255,255,.9);margin-top:.15em}
+.rq-env-flap{position:absolute;left:0;top:0;width:100%;height:56%;z-index:5;transform-origin:50% 0;transform-style:preserve-3d;transition:transform 640ms cubic-bezier(.55,0,.25,1) 140ms,z-index 0s linear 470ms}
+.rq-page[data-state="open"] .rq-env-flap{transform:rotateX(180deg);z-index:2}
+.rq-flap-face{position:absolute;inset:0;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.rq-flap-face>svg{width:100%;height:100%;overflow:visible}
+.rq-flap-front>svg{filter:drop-shadow(0 .14em .14em rgba(3,30,60,.32))}
+.rq-flap-inner{transform:rotateX(180deg);transition:opacity 200ms linear 900ms}
+.rq-page[data-state="open"] .rq-flap-inner{opacity:0}
+.rq-seal{position:absolute;left:50%;width:21%;margin-left:-10.5%;bottom:calc(var(--rq-w) * -.085);filter:drop-shadow(0 .22em .3em rgba(40,26,0,.38))}
+.rq-seal svg{width:100%;height:auto}
+
+/* Voucher peeking out of the envelope (code masked) */
+.rq-peek{position:absolute;z-index:3;left:4.667%;width:90.667%;top:4%;height:94%;border-radius:.6em;background:var(--rq-cream);overflow:hidden;box-shadow:0 -.1em .9em rgba(30,10,0,.2);display:flex;flex-direction:column;color:var(--rq-espresso);transition:transform 800ms cubic-bezier(.16,1,.3,1) 660ms}
+.rq-page[data-state="open"] .rq-peek{transform:translateY(-68%)}
+.rq-peek-head{display:flex;align-items:center;gap:.55em;padding:.5em .8em;background:var(--rq-espresso);color:var(--rq-cream)}
+.rq-peek-head img{width:2.7em;height:2.7em;border-radius:50%;flex:none}
+.rq-peek-kicker{display:block;font-size:.72em;font-weight:700;color:var(--rq-caramel-lt);line-height:1.3}
+.rq-peek-title{display:block;font-size:.98em;font-weight:800;line-height:1.3;color:var(--rq-on-dark)}
+.rq-peek-ticket{position:relative;margin:.55em .7em 0;border-radius:.6em;background:linear-gradient(120deg,var(--rq-brown),var(--rq-coffee-2));color:var(--rq-cream)}
+.rq-peek-main{display:flex;align-items:center;justify-content:space-between;gap:.5em;padding:.4em .9em .35em}
+.rq-peek-pct{display:flex;align-items:baseline;gap:.25em;flex:none}
+.rq-peek-pct span{font-size:1em;font-weight:800;color:var(--rq-on-dark-2)}
+.rq-peek-pct b{font-size:2.5em;line-height:1.1;font-weight:900;color:var(--rq-on-dark)}
+.rq-peek-where{margin:0;font-size:.76em;font-weight:600;line-height:1.4}
+.rq-peek-ticket .rq-perf{margin:0 .9em;border-top-width:1.5px}
+.rq-peek-ticket .rq-perf::before,.rq-peek-ticket .rq-perf::after{width:.9em;height:.9em;top:-.5em}
+.rq-peek-ticket .rq-perf::before{right:-1.35em}
+.rq-peek-ticket .rq-perf::after{left:-1.35em}
+.rq-peek-stub{display:flex;justify-content:center;padding:.45em .9em .55em}
+.rq-peek-mask{display:flex;align-items:center;justify-content:center;gap:.45em;width:80%;min-height:2.2em;padding:0 .6em;border-radius:.5em;background:repeating-linear-gradient(-45deg,#8D5D34 0 .4em,#7A4C28 .4em .8em);border:1px solid rgba(246,240,234,.28);font-size:.8em;font-weight:800;color:var(--rq-on-dark);white-space:nowrap}
+.rq-peek-mask svg{width:1.2em;height:1.2em;flex:none}
+.rq-peek-addr{margin:.6em .9em 0;font-size:.7em;font-weight:700;color:var(--rq-brown);text-align:center}
+.rq-peek-foot{margin-top:auto;padding:.35em .8em;background:var(--rq-espresso);color:var(--rq-cream);font-size:.72em;font-weight:700;text-align:center}
+
+/* ===== Full voucher (Rawnaq identity, in partnership with Jewar) ===== */
+.rq-voucher-wrap{position:relative}
+.rq-existing{display:flex;align-items:center;gap:8px;max-width:420px;margin:0 auto 8px;padding:4px 10px;border-radius:10px;background:var(--rq-blue-50);border:1px solid var(--rq-blue-100);font-size:13.5px;line-height:1.5;font-weight:700;color:var(--rq-blue-800)}
+.rq-existing svg{width:18px;height:18px;flex:none;color:var(--rq-blue)}
+.rq-voucher{position:relative;max-width:420px;margin:0 auto;background:var(--rq-cream);color:var(--rq-espresso);border-radius:18px;overflow:hidden;box-shadow:0 1px 2px rgba(54,23,15,.08),0 22px 44px -24px rgba(54,23,15,.5)}
+.rq-v-head{position:relative;display:flex;align-items:center;gap:12px;padding:8px 16px;background:radial-gradient(140% 130% at 100% 0%,#4C2619 0%,var(--rq-espresso) 62%);color:var(--rq-cream)}
+.rq-v-logo{width:46px;height:46px;flex:none;border-radius:50%;box-shadow:0 0 0 2px rgba(224,190,134,.45),0 6px 14px -6px rgba(0,0,0,.6)}
+.rq-v-headtext{min-width:0}
+.rq-v-kicker{margin:0;font-size:12.5px;font-weight:700;line-height:1.4;color:var(--rq-on-dark-2)}
+.rq-v-title{margin:0;font-size:19px;line-height:1.3;font-weight:800;color:var(--rq-on-dark);text-wrap:balance}
+.rq-sample{position:absolute;top:10px;left:12px;padding:1px 10px;border-radius:999px;background:var(--rq-on-dark);color:var(--rq-espresso);font-size:12px;font-weight:800;line-height:1.6}
+.rq-v-body{padding:8px 16px 10px}
+.rq-v-thanks{margin:0;font-size:17px;line-height:1.4;font-weight:800;color:var(--rq-espresso);overflow-wrap:anywhere}
+.rq-v-won{margin:0;font-size:14px;line-height:1.45;font-weight:700;color:var(--rq-brown)}
+.rq-ticket{position:relative;margin-top:8px;border-radius:14px;background:linear-gradient(120deg,var(--rq-brown) 0%,var(--rq-coffee-2) 100%);color:var(--rq-cream);box-shadow:0 12px 20px -14px rgba(54,23,15,.7)}
+.rq-ticket-main{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:6px 14px 4px}
+.rq-ticket-pct{display:flex;align-items:baseline;gap:6px;flex:none;margin:0}
+.rq-ticket-pct span{font-size:18px;font-weight:800;color:var(--rq-on-dark-2)}
+.rq-ticket-pct b{font-size:46px;line-height:1.1;font-weight:900;color:var(--rq-on-dark)}
+.rq-ticket-desc{margin:0;font-size:13px;line-height:1.5;font-weight:600;color:var(--rq-cream);text-wrap:pretty}
+.rq-ticket-desc b{display:block;font-size:15px;font-weight:800;color:var(--rq-on-dark)}
+.rq-perf{position:relative;height:0;margin:0 14px;border-top:2px dashed rgba(246,240,234,.42)}
+.rq-perf::before,.rq-perf::after{content:"";position:absolute;top:-12px;width:22px;height:22px;border-radius:50%;background:var(--rq-cream)}
+.rq-perf::before{right:-25px}
+.rq-perf::after{left:-25px}
+.rq-ticket-stub{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px 10px}
+.rq-ticket-stub-label{font-size:14px;font-weight:800;color:var(--rq-cream)}
+.rq-code{position:relative;display:inline-flex;align-items:center;direction:ltr;unicode-bidi:isolate;padding:2px 12px;border-radius:9px;background:rgba(246,240,234,.12);border:1px solid rgba(246,240,234,.38);font-family:ui-monospace,'SF Mono','Roboto Mono',Menlo,Consolas,'Liberation Mono',monospace;font-size:24px;line-height:1.5;font-weight:700;letter-spacing:.1em;color:var(--rq-on-dark);white-space:nowrap}
+.rq-code-mask{position:absolute;inset:-1px;border-radius:9px;background:repeating-linear-gradient(-45deg,#9A6A3E 0 7px,#84572F 7px 14px)}
+.rq-v-meta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px 12px;margin:8px 0 0;font-size:14px;line-height:1.5;font-weight:700;color:var(--rq-brown)}
+.rq-v-meta p{display:flex;align-items:center;gap:6px;margin:0}
+.rq-v-meta svg{width:18px;height:18px;flex:none;color:var(--rq-brown)}
+.rq-v-meta b{font-weight:800;color:var(--rq-espresso)}
+.rq-v-enjoy{display:flex;align-items:center;gap:8px;margin:4px 0 0;font-size:13.5px;line-height:1.5;font-weight:700;color:var(--rq-brown);text-wrap:pretty}
+.rq-v-enjoy svg{width:18px;height:18px;flex:none;color:var(--rq-brown)}
+.rq-v-where{margin-top:9px;padding-top:9px;border-top:1px solid var(--rq-cream-line)}
+.rq-v-addr{display:flex;align-items:flex-start;gap:6px;margin:0;font-size:13.5px;line-height:1.55;font-weight:600;color:var(--rq-espresso)}
+.rq-v-addr b{font-weight:800}
+.rq-v-addr svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--rq-brown)}
+.rq-v-dist{display:flex;align-items:flex-start;gap:6px;margin:3px 0 0;font-size:13px;line-height:1.5;font-weight:700;color:var(--rq-brown)}
+.rq-v-dist svg{width:18px;height:18px;flex:none;margin-top:1px}
+.rq-v-map{display:flex;align-items:center;justify-content:center;gap:6px;min-height:48px;margin-top:8px;padding:0 6px;border-radius:12px;background:var(--rq-espresso);color:var(--rq-on-dark);font-size:14px;line-height:1.3;font-weight:800;text-decoration:none;text-align:center;transition:background-color .15s}
+.rq-v-map:hover{background:#230F09}
+.rq-v-map svg{width:18px;height:18px;flex:none}
+.rq-page .rq-v-map:focus-visible{outline-color:var(--rq-espresso)}
+.rq-v-qr{display:flex;align-items:center;gap:10px;margin:8px 0 0}
+.rq-v-qr-tile{flex:none;display:block;width:128px;height:128px;padding:3px;border-radius:10px;background:#fff;border:1px solid var(--rq-cream-line)}
+.rq-v-qr-tile img{width:120px;height:120px}
+.rq-v-qr figcaption{flex:1 1 auto;min-width:0;text-align:center}
+.rq-v-qr-cap{display:block;font-size:13px;line-height:1.5;font-weight:800;color:var(--rq-espresso);text-wrap:balance}
+.rq-v-show{margin:8px 0 0;padding-top:6px;border-top:1px solid var(--rq-cream-line);font-size:13px;line-height:1.55;font-weight:800;color:var(--rq-espresso);text-align:center;text-wrap:balance}
+.rq-v-collab{display:flex;align-items:center;justify-content:center;gap:10px;padding:5px 16px;background:#fff;border-top:1px solid var(--rq-cream-line);font-size:12.5px;line-height:1.4;font-weight:700;color:var(--rq-ink-2)}
+.rq-v-collab img{height:22px;width:auto}
+.rq-v-collab i{width:1px;height:20px;background:var(--rq-line)}
+.rq-v-foot{padding:5px 16px;background:var(--rq-espresso);color:var(--rq-on-dark);font-size:14px;line-height:1.5;font-weight:800;text-align:center}
+
+/* ===== Panel: CTA, form, after-voucher ===== */
+.rq-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:54px;padding:0 20px;border:0;border-radius:12px;background:var(--rq-blue);color:#fff;font:inherit;font-size:17px;font-weight:800;line-height:1.3;cursor:pointer;text-decoration:none;transition:background-color .15s ease,transform .1s ease}
+.rq-btn:hover{background:var(--rq-blue-700)}
+.rq-btn:active{background:var(--rq-blue-800);transform:translateY(1px)}
+.rq-btn svg{width:22px;height:22px;flex:none}
+.rq-btn[disabled]{cursor:progress;background:var(--rq-blue-700)}
+.rq-btn-2{background:#fff;color:var(--rq-blue);box-shadow:inset 0 0 0 1.5px var(--rq-blue)}
+.rq-btn-2:hover{background:var(--rq-blue-50)}
+.rq-btn-2:active{background:var(--rq-blue-100)}
+.rq-spin{display:none;width:20px;height:20px;flex:none;border-radius:50%;border:2.5px solid rgba(255,255,255,.35);border-top-color:#fff;animation:rq-spin .8s linear infinite}
+.rq-is-busy .rq-spin{display:block}
+.rq-is-busy .rq-btn-ic{display:none}
+@keyframes rq-spin{to{transform:rotate(360deg)}}
+.rq-linkbtn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:48px;padding:0 12px;border:0;border-radius:10px;background:none;color:var(--rq-blue);font:inherit;font-size:15px;font-weight:800;cursor:pointer;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:.35em;white-space:nowrap}
+.rq-linkbtn:hover{background:var(--rq-blue-50)}
+
+.rq-formcard{min-width:0}
+.rq-card-h{margin:0;font-size:19px;line-height:1.4;font-weight:800;color:var(--rq-ink)}
+.rq-field{margin-top:10px;min-width:0}
+.rq-label{display:flex;align-items:baseline;flex-wrap:wrap;gap:0 6px;margin-bottom:4px;font-size:15px;line-height:1.45;font-weight:800;color:var(--rq-ink)}
+.rq-opt{font-size:12.5px;font-weight:600;color:var(--rq-ink-2)}
+.rq-input,.rq-select{display:block;width:100%;height:48px;margin:0;padding:0 12px;border:1px solid var(--rq-field);border-radius:10px;background:#fff;color:var(--rq-ink);font:inherit;font-size:16px;font-weight:600;transition:border-color .15s,box-shadow .15s}
+.rq-input::placeholder{color:#6B7787;font-weight:500}
+.rq-input:hover,.rq-select:hover{border-color:#5F6E80}
+.rq-input:focus,.rq-select:focus{outline:2px solid var(--rq-blue);outline-offset:1px;border-color:var(--rq-blue)}
+.rq-field.rq-has-err .rq-input[aria-invalid="true"]{border-color:var(--rq-err);box-shadow:inset 0 0 0 1px var(--rq-err)}
+.rq-hint{margin:4px 0 0;font-size:12.5px;line-height:1.5;color:var(--rq-ink-2)}
+.rq-err{display:flex;align-items:flex-start;gap:6px;margin:5px 0 0;font-size:13.5px;line-height:1.5;font-weight:700;color:var(--rq-err)}
+.rq-err:empty{display:none}
+.rq-err::before{content:"!";flex:none;display:grid;place-items:center;width:17px;height:17px;margin-top:2px;border-radius:50%;background:var(--rq-err);color:#fff;font-size:11.5px;font-weight:900;line-height:1}
+.rq-phone{display:flex;gap:8px}
+.rq-phone .rq-cc{flex:0 0 84px;text-align:center;direction:ltr;letter-spacing:.02em}
+.rq-phone .rq-tel{flex:1 1 auto;min-width:0;direction:ltr;text-align:left;letter-spacing:.03em}
+.rq-row2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 10px;align-items:end}
+.rq-selectwrap{position:relative}
+.rq-select{-webkit-appearance:none;appearance:none;padding-inline-end:36px;cursor:pointer;text-overflow:ellipsis}
+.rq-selectwrap svg{position:absolute;left:10px;top:50%;width:20px;height:20px;margin-top:-10px;color:var(--rq-ink-2);pointer-events:none}
+.rq-check{display:flex;align-items:flex-start;gap:10px;min-height:48px;padding:10px 12px;border:1px solid var(--rq-line);border-radius:12px;background:#FAFBFC;cursor:pointer;font-size:14px;line-height:1.55;font-weight:700;color:var(--rq-ink)}
+.rq-check input{flex:none;width:22px;height:22px;margin:0;accent-color:var(--rq-blue);cursor:pointer}
+.rq-check input:focus-visible{outline:3px solid var(--rq-blue);outline-offset:2px}
+.rq-hp{position:absolute!important;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.rq-formerr{display:flex;align-items:center;gap:8px;margin:12px 0 0;padding:9px 12px;border-radius:10px;background:var(--rq-err-bg);border:1px solid #F4C4BE;color:var(--rq-err);font-size:14px;line-height:1.5;font-weight:800}
+.rq-formerr:empty{display:none}
+.rq-form .rq-btn{margin-top:12px}
+
+.rq-howto-card{display:none}
+.rq-next-h{margin:0;font-size:18px;line-height:1.4;font-weight:800}
+.rq-howto{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:12px}
+.rq-howto li{display:flex;align-items:flex-start;gap:12px}
+.rq-howto-ic{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--rq-blue-50);color:var(--rq-blue)}
+.rq-howto-ic svg{width:22px;height:22px}
+.rq-howto b{display:block;font-size:15.5px;line-height:1.45;font-weight:800}
+.rq-howto-t{display:block;font-size:14px;line-height:1.55;color:var(--rq-ink-2)}
+.rq-actions{max-width:420px;margin:0 auto;width:100%}
+.rq-actions-row{display:flex;align-items:center;gap:8px}
+.rq-actions-row .rq-btn{flex:1 1 auto;width:auto;min-height:50px;font-size:16px}
+.rq-savenote{display:flex;align-items:center;gap:10px;padding:8px 8px 8px 12px;border-radius:12px;background:var(--rq-blue-50);border:1px solid var(--rq-blue-100);font-size:14px;line-height:1.55;font-weight:700;color:var(--rq-ink)}
+.rq-savenote p{margin:0;flex:1 1 auto}
+.rq-savenote .rq-linkbtn{flex:none;text-decoration:none;background:#fff;box-shadow:inset 0 0 0 1px var(--rq-blue-200)}
+
+/* Instant state changes (saved voucher, reset) */
+.rq-instant *,.rq-instant *::before,.rq-instant *::after{transition:none!important}
+
+/* ===== Phone and tablet (single column) ===== */
+@media (max-width:899px){
+  .rq-page[data-state="invite"] .rq-steps{display:flex}
+  .rq-page[data-state="open"] .rq-steps,.rq-page[data-state="voucher"] .rq-steps{display:none}
+  .rq-page[data-state="open"] .rq-lead,.rq-page[data-state="open"] .rq-eyebrow{display:none}
+  .rq-page[data-state="open"] .rq-h1{font-size:21px;line-height:1.4}
+  .rq-page[data-state="open"] .rq-grid{gap:10px}
+  .rq-page[data-state="open"] .rq-main{padding-top:12px}
+  /* Open: the envelope settles lower and slightly smaller while the voucher rises, so the form fits under it */
+  .rq-page[data-state="open"] .rq-stage{height:calc(var(--rq-w) * .74)}
+  .rq-page[data-state="open"] .rq-env{bottom:calc(var(--rq-w) * -.3117);transform:scale(.9)}
+  .rq-page[data-state="voucher"] .rq-intro{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .rq-page[data-state="voucher"] .rq-main{padding-top:12px}
+  .rq-page[data-state="voucher"] .rq-grid{gap:12px}
+}
+@media (min-width:600px) and (max-width:899px){
+  .rq-stagebox{--rq-w:340px}
+}
+@media (max-width:374px){
+  .rq-h1{font-size:24px}
+  .rq-ticket-pct b{font-size:42px}
+  .rq-v-body{padding-inline:12px}
+  .rq-v-map svg{display:none}
+  .rq-code{font-size:22px;padding:2px 10px}
+  .rq-label{font-size:14px}
+}
+
+/* ===== Desktop (stage and panel side by side) ===== */
+@media (min-width:900px){
+  .rq-main{padding:20px 32px}
+  .rq-eyebrow{font-size:14.5px;margin-bottom:6px}
+  .rq-grid{margin:auto;max-width:1120px;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);column-gap:48px;row-gap:0;
+    grid-template-areas:"stage ." "stage intro" "stage steps" "stage panel" "stage .";grid-template-rows:1fr auto auto auto 1fr;align-items:start}
+  .rq-stagecol{grid-area:stage;align-self:center}
+  .rq-intro{grid-area:intro}
+  .rq-steps{grid-area:steps;justify-content:flex-start;margin-top:16px}
+  .rq-panelcol{grid-area:panel;margin-top:20px}
+  .rq-stagebox{--rq-w:360px;border-radius:24px;padding:20px 16px}
+  .rq-page[data-state="open"] .rq-stage{height:calc(var(--rq-w) * 1.2);transition-delay:120ms}
+  .rq-h1{font-size:34px;line-height:1.3}
+  .rq-lead{font-size:17px;max-width:30em}
+  .rq-page[data-state="open"] .rq-h1{font-size:28px}
+  .rq-page[data-state="open"] .rq-lead{font-size:15.5px;margin-top:4px}
+  .rq-page[data-state="open"] .rq-panelcol{margin-top:14px}
+  .rq-page[data-state="open"] .rq-steps{margin-top:12px}
+  .rq-cta{max-width:360px}
+  .rq-formcard{background:#fff;border:1px solid var(--rq-line);border-radius:16px;box-shadow:var(--rq-shadow);padding:18px 22px 20px}
+  .rq-voucher-wrap{padding:20px 24px;border-radius:24px;border:1px solid var(--rq-blue-100);background:radial-gradient(120% 90% at 50% 20%,#fff 0%,var(--rq-blue-50) 60%,#E5EEF7 100%)}
+  .rq-page[data-state="voucher"] .rq-panelcol{margin-top:16px}
+  .rq-howto-card{display:block;padding:18px 20px;border:1px solid var(--rq-line);border-radius:16px;background:#fff;box-shadow:var(--rq-shadow);margin-bottom:14px}
+  .rq-actions{max-width:none}
+}
+@media (min-width:1100px){
+  .rq-stagebox{--rq-w:420px}
+  .rq-grid{column-gap:64px}
+}
+
+/* ===== Reduced motion: every state swaps instantly ===== */
+@media (prefers-reduced-motion:reduce){
+  .rq-page *,.rq-page *::before,.rq-page *::after{transition:none!important;animation:none!important}
+  .rq-is-busy .rq-spin{animation:rq-spin 1.6s linear infinite!important}
+}
+</style>
+</head>
+<body>
+<div class="rq-page" id="rq-gift" data-state="invite">
+
+  <svg class="rq-defs" aria-hidden="true" focusable="false" width="0" height="0">
+    <defs>
+      <symbol id="rq-star" viewBox="-10 -10 20 20"><path fill="currentColor" d="M0 -10Q1.6 -1.6 10 0Q1.6 1.6 0 10Q-1.6 1.6 -10 0Q-1.6 -1.6 0 -10Z"/></symbol>
+      <pattern id="rq-liner" width="28" height="28" patternUnits="userSpaceOnUse">
+        <rect width="28" height="28" fill="#0A4C86"/>
+        <path d="M7 3.8Q7.51 6.49 10.2 7Q7.51 7.51 7 10.2Q6.49 7.51 3.8 7Q6.49 6.49 7 3.8Z" fill="#D8A703" opacity=".6"/>
+        <path d="M21 18.8Q21.35 20.65 23.2 21Q21.35 21.35 21 23.2Q20.65 21.35 18.8 21Q20.65 20.65 21 18.8Z" fill="#A9C9E8" opacity=".35"/>
+      </pattern>
+      <pattern id="rq-dots" width="56" height="56" patternUnits="userSpaceOnUse">
+        <path d="M14 10Q14.64 13.36 18 14Q14.64 14.64 14 18Q13.36 14.64 10 14Q13.36 13.36 14 10Z" fill="#09579B" opacity=".16"/>
+        <path d="M42 39.4Q42.42 41.58 44.6 42Q42.42 42.42 42 44.6Q41.58 42.42 39.4 42Q41.58 41.58 42 39.4Z" fill="#D8A703" opacity=".4"/>
+      </pattern>
+      <linearGradient id="rq-shade-down" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#021A33" stop-opacity=".5"/><stop offset="1" stop-color="#021A33" stop-opacity=".15"/></linearGradient>
+      <linearGradient id="rq-shade-up" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#021A33" stop-opacity=".05"/><stop offset="1" stop-color="#021A33" stop-opacity=".35"/></linearGradient>
+    </defs>
+  </svg>
+
+  <p id="rq-live" class="rq-sr" aria-live="polite"></p>
+
+  <div class="rq-main">
+    <div class="rq-grid">
+
+      <!-- Intro (copy changes per state) -->
+      <div class="rq-intro">
+        <p class="rq-eyebrow">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><use href="#rq-star"/></svg>
+          <span>مؤتمر ومعرض الحج 2026 · 8 إلى 11 نوفمبر</span>
+        </p>
+        <div data-when="invite">
+          <h1 class="rq-h1">لك هدية من جناح جوار الصفوة</h1>
+          <p class="rq-lead">شكراً لزيارتك جناحنا. جهّزنا لك هدية ضيافة، افتح الظرف واكتشفها.</p>
+        </div>
+        <div data-when="open">
+          <h1 class="rq-h1">هديتك: خصم <span dir="ltr">50%</span> في رونق كافيه</h1>
+          <p class="rq-lead">الخصم على طلبك كله، ويظهر كود الخصم مع اسمك بعد التسجيل.</p>
+        </div>
+        <div data-when="voucher">
+          <h1 class="rq-h1">هديتك جاهزة يا <span data-rq-name>ضيف جوار</span></h1>
+          <p class="rq-lead">شكراً لزيارتك جناح جوار الصفوة. احفظ القسيمة واعرضها في رونق كافيه، وبالعافية عليك.</p>
+        </div>
+      </div>
+
+      <!-- Progress -->
+      <ol class="rq-steps" aria-label="خطوات الهدية">
+        <li class="rq-is-current" aria-current="step"><span class="rq-step-dot"><span>1</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4L19 7"/></svg></span>افتح الظرف<span class="rq-sr rq-step-st"></span></li>
+        <li><span class="rq-step-dot"><span>2</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4L19 7"/></svg></span>اكتب بياناتك<span class="rq-sr rq-step-st"></span></li>
+        <li><span class="rq-step-dot"><span>3</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.2 4L19 7"/></svg></span>خذ الكود<span class="rq-sr rq-step-st"></span></li>
+      </ol>
+
+      <!-- Stage column: envelope (invite, open) or full voucher -->
+      <div class="rq-stagecol">
+
+        <div class="rq-stagebox" data-when="invite open" aria-hidden="true">
+          <svg class="rq-stagebox-pattern" focusable="false"><rect width="100%" height="100%" fill="url(#rq-dots)"/></svg>
+          <div class="rq-stage">
+            <span class="rq-spark rq-spark-1"><svg viewBox="0 0 20 20"><use href="#rq-star"/></svg></span>
+            <span class="rq-spark rq-spark-2"><svg viewBox="0 0 20 20"><use href="#rq-star"/></svg></span>
+            <span class="rq-spark rq-spark-3"><svg viewBox="0 0 20 20"><use href="#rq-star"/></svg></span>
+            <span class="rq-spark rq-spark-4"><svg viewBox="0 0 20 20"><use href="#rq-star"/></svg></span>
+            <span class="rq-burst rq-burst-1"><svg viewBox="0 0 20 20"><use href="#rq-star"/></svg></span>
+            <span class="rq-burst rq-burst-2"><svg viewBox="0 0 20 20"><use href="#rq-star"/></svg></span>
+
+            <div class="rq-env">
+              <svg class="rq-env-back" viewBox="0 0 300 200" preserveAspectRatio="none" focusable="false">
+                <rect width="300" height="200" rx="10" fill="url(#rq-liner)"/>
+                <rect width="300" height="200" rx="10" fill="url(#rq-shade-down)"/>
+              </svg>
+
+              <div class="rq-peek">
+                <div class="rq-peek-head">
+                  <img src="assets/img/rawnaq-logo.png" alt="" width="40" height="40" decoding="async">
+                  <div>
+                    <span class="rq-peek-kicker">رونق كافيه</span>
+                    <span class="rq-peek-title">قسيمة ضيافة تستاهلها</span>
+                  </div>
+                </div>
+                <div class="rq-peek-ticket">
+                  <div class="rq-peek-main">
+                    <div class="rq-peek-pct"><span>خصم</span><b dir="ltr">50%</b></div>
+                    <p class="rq-peek-where">على طلبك كله في رونق كافيه</p>
+                  </div>
+                  <div class="rq-perf"></div>
+                  <div class="rq-peek-stub">
+                    <span class="rq-peek-mask">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></svg>
+                      يظهر الكود بعد التسجيل
+                    </span>
+                  </div>
+                </div>
+                <p class="rq-peek-addr">العزيزية الجنوبية، مكة</p>
+                <div class="rq-peek-foot">أهلاً وسهلاً فيكم</div>
+              </div>
+
+              <svg class="rq-env-pocket" viewBox="0 0 300 200" preserveAspectRatio="none" focusable="false">
+                <defs>
+                  <clipPath id="rq-pk-clip"><rect width="300" height="200" rx="10"/></clipPath>
+                  <linearGradient id="rq-pk-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0C65B3"/><stop offset="1" stop-color="#0A5899"/></linearGradient>
+                  <linearGradient id="rq-pk-l" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#09559A"/><stop offset="1" stop-color="#0B5EA8"/></linearGradient>
+                  <linearGradient id="rq-pk-r" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#09559A"/><stop offset="1" stop-color="#0B5EA8"/></linearGradient>
+                </defs>
+                <g clip-path="url(#rq-pk-clip)">
+                  <path d="M0 0L143 106Q150 112 143 118L0 200Z" fill="url(#rq-pk-l)"/>
+                  <path d="M300 0L157 106Q150 112 157 118L300 200Z" fill="url(#rq-pk-r)"/>
+                  <path d="M0 0L143 106M300 0L157 106" fill="none" stroke="#032B52" stroke-opacity=".3" stroke-width="1.2"/>
+                  <path d="M0 200L137 99Q150 90 163 99L300 200Z" fill="url(#rq-pk-b)"/>
+                  <path d="M0 200L137 99Q150 90 163 99L300 200" fill="none" stroke="#032B52" stroke-opacity=".3" stroke-width="1.4"/>
+                  <path d="M0 201.4L137 100.4Q150 91.4 163 100.4L300 201.4" fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="1"/>
+                  <path d="M18 200L139 110.5Q150 103 161 110.5L282 200" fill="none" stroke="#D8A703" stroke-opacity=".55" stroke-width=".8"/>
+                </g>
+              </svg>
+              <div class="rq-env-addr"><b>إلى ضيفنا الكريم</b><span>مع تحيات جوار الصفوة</span></div>
+
+              <div class="rq-env-flap">
+                <div class="rq-flap-face rq-flap-front">
+                  <svg viewBox="0 0 300 112" preserveAspectRatio="none" focusable="false">
+                    <defs><linearGradient id="rq-flap-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0C61AC"/><stop offset="1" stop-color="#09579B"/></linearGradient></defs>
+                    <path d="M0 9Q0 0 10 0H290Q300 0 300 9L163 101Q150 111 137 101Z" fill="url(#rq-flap-g)"/>
+                    <path d="M20 7H280L161 94Q150 102 139 94Z" fill="none" stroke="#D8A703" stroke-opacity=".55" stroke-width=".8"/>
+                  </svg>
+                  <div class="rq-seal">
+                    <svg viewBox="-34 -34 68 68" focusable="false">
+                      <defs>
+                        <radialGradient id="rq-wax" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#FBE38A"/><stop offset=".38" stop-color="#E2B21C"/><stop offset=".78" stop-color="#C49204"/><stop offset="1" stop-color="#94700A"/></radialGradient>
+                        <radialGradient id="rq-wax-in" cx="62%" cy="66%" r="72%"><stop offset="0" stop-color="#EDC13A"/><stop offset="1" stop-color="#B98A06"/></radialGradient>
+                      </defs>
+                      <path fill="url(#rq-wax)" d="M0.0 -30.2 C2.6 -30.2 5.0 -27.2 7.8 -26.5 C10.6 -25.8 14.6 -27.4 16.7 -26.0 C18.9 -24.6 18.9 -20.2 20.8 -18.0 C22.6 -15.8 26.7 -15.1 27.9 -12.7 C29.1 -10.4 27.6 -6.8 27.8 -4.0 C28.1 -1.2 29.7 1.6 29.3 4.2 C29.0 6.9 27.0 9.3 25.8 11.8 C24.7 14.3 24.1 17.4 22.4 19.4 C20.6 21.4 17.6 22.3 15.3 23.8 C12.9 25.3 10.9 27.8 8.4 28.5 C5.8 29.1 2.8 27.4 0.0 27.5 C-2.8 27.6 -6.0 29.7 -8.6 29.2 C-11.2 28.7 -13.4 26.1 -15.7 24.5 C-18.1 22.9 -20.9 21.7 -22.5 19.5 C-24.1 17.3 -23.9 14.1 -25.3 11.5 C-26.6 9.0 -29.9 7.0 -30.6 4.4 C-31.2 1.8 -29.5 -1.3 -29.1 -4.2 C-28.7 -7.0 -29.3 -10.4 -28.0 -12.8 C-26.7 -15.2 -23.1 -16.1 -21.3 -18.4 C-19.5 -20.8 -19.4 -25.3 -17.1 -26.6 C-14.8 -27.9 -10.6 -25.7 -7.7 -26.3 C-4.9 -26.9 -2.6 -30.2 0.0 -30.2Z"/>
+                      <circle r="20.5" fill="url(#rq-wax-in)" stroke="#9E7606" stroke-width="1.2"/>
+                      <circle r="20.5" fill="none" stroke="#FCE7A0" stroke-opacity=".6" stroke-width=".8" transform="translate(-.7 -.9)"/>
+                      <g>
+                        <path d="M-8 -16Q-6.72 -9.28 0 -8Q-6.72 -6.72 -8 0Q-9.28 -6.72 -16 -8Q-9.28 -9.28 -8 -16Z" fill="#7E5D03" opacity=".7" transform="translate(.8 .8)"/>
+                        <path d="M-8 -16Q-6.72 -9.28 0 -8Q-6.72 -6.72 -8 0Q-9.28 -6.72 -16 -8Q-9.28 -9.28 -8 -16Z" fill="#FFF0B3" opacity=".8" transform="translate(-.6 -.6)"/>
+                        <path d="M-8 -16Q-6.72 -9.28 0 -8Q-6.72 -6.72 -8 0Q-9.28 -6.72 -16 -8Q-9.28 -9.28 -8 -16Z" fill="#D6A40C"/>
+                        <path d="M6 -5Q7.76 4.24 17 6Q7.76 7.76 6 17Q4.24 7.76 -5 6Q4.24 4.24 6 -5Z" fill="#7E5D03" opacity=".7" transform="translate(.8 .8)"/>
+                        <path d="M6 -5Q7.76 4.24 17 6Q7.76 7.76 6 17Q4.24 7.76 -5 6Q4.24 4.24 6 -5Z" fill="#FFF0B3" opacity=".8" transform="translate(-.6 -.6)"/>
+                        <path d="M6 -5Q7.76 4.24 17 6Q7.76 7.76 6 17Q4.24 7.76 -5 6Q4.24 4.24 6 -5Z" fill="#D6A40C"/>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="rq-flap-face rq-flap-inner">
+                  <svg viewBox="0 0 300 112" preserveAspectRatio="none" focusable="false">
+                    <path d="M0 112L137 11Q150 1 163 11L300 112Z" fill="url(#rq-liner)"/>
+                    <path d="M0 112L137 11Q150 1 163 11L300 112Z" fill="url(#rq-shade-up)"/>
+                    <path d="M0 112L137 11Q150 1 163 11L300 112" fill="none" stroke="#0C61AC" stroke-width="3"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full voucher: shown only after the server confirms the registration -->
+        <div class="rq-voucher-wrap" data-when="voucher">
+          <p class="rq-existing" id="rq-existing" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6v.1"/></svg>
+            سبق تسجيلك بهذا الرقم، وهذه قسيمتك
+          </p>
+          <article class="rq-voucher" aria-labelledby="rq-v-title">
+            <header class="rq-v-head">
+              <img class="rq-v-logo" src="assets/img/rawnaq-logo.png" alt="شعار رونق كافيه" width="48" height="48" decoding="async">
+              <div class="rq-v-headtext">
+                <p class="rq-v-kicker">رونق كافيه</p>
+                <h2 class="rq-v-title" id="rq-v-title" tabindex="-1">قسيمة ضيافة تستاهلها</h2>
+              </div>
+              <span class="rq-sample" id="rq-sample" hidden>عينة</span>
+            </header>
+
+            <div class="rq-v-body">
+              <p class="rq-v-thanks">شكراً للتسجيل يا <span data-rq-name>ضيف جوار</span>!</p>
+              <p class="rq-v-won">ربحت معنا فوتشر</p>
+
+              <div class="rq-ticket">
+                <div class="rq-ticket-main">
+                  <p class="rq-ticket-pct"><span>خصم</span><b dir="ltr">50%</b></p>
+                  <p class="rq-ticket-desc"><b>على طلبك كله</b>عند زيارتك <span class="rq-nowrap">رونق كافيه</span></p>
+                </div>
+                <div class="rq-perf" aria-hidden="true"></div>
+                <div class="rq-ticket-stub">
+                  <span class="rq-ticket-stub-label">كود الخصم</span>
+                  <span class="rq-code"><span id="rq-code">RWN-7K3Q</span><span class="rq-code-mask" aria-hidden="true" hidden></span></span>
+                </div>
+              </div>
+
+              <div class="rq-v-meta">
+                <p>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+                  <span><span id="rq-until-label">صالح حتى</span> <b id="rq-until">9 ديسمبر 2026</b></span>
+                </p>
+                <p><b>بدون حد أقصى</b></p>
+              </div>
+
+              <p class="rq-v-enjoy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20.5s-7-4.4-7-10a4 4 0 0 1 7-2.6 4 4 0 0 1 7 2.6c0 5.6-7 10-7 10z"/></svg>
+                استمتع بمشروبك المفضل والحلا اللي يحلّي يومك
+              </p>
+
+              <div class="rq-v-where">
+                <p class="rq-v-addr">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10" r="2.4"/></svg>
+                    <span><b>رونق كافيه</b> · العزيزية الجنوبية · فندق درة الجوار · قبل المسجد القطري، مكة</span>
+                </p>
+                <p class="rq-v-dist">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 15.5v-3l2-5a1.5 1.5 0 0 1 1.4-1h10.2a1.5 1.5 0 0 1 1.4 1l2 5v3a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1z"/><path d="M3.5 12.5h17M6.5 16.5v2M17.5 16.5v2"/></svg>
+                    نحو 9 دقائق من الحرم بالسيارة
+                </p>
+                <figure class="rq-v-qr">
+                  <span class="rq-v-qr-tile"><img src="assets/img/rawnaq-maps-qr.svg" width="120" height="120" alt="رمز QR يفتح موقع رونق كافيه في الخرائط" decoding="async"></span>
+                  <figcaption>
+                    <span class="rq-v-qr-cap">امسح الرمز للوصول إلى رونق</span>
+                    <a class="rq-v-map" href="https://maps.app.goo.gl/ChNYTqXQ8qXA3PM16" target="_blank" rel="noopener noreferrer">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4.5 3.5 6.5v13l5.5-2 6 2 5.5-2v-13l-5.5 2-6-2z"/><path d="M9 4.5v13M15 6.5v13"/></svg>
+                      <span>افتح الموقع في الخرائط</span>
+                      <span class="rq-sr">(يفتح في نافذة جديدة)</span>
+                    </a>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <p class="rq-v-show">اعرض هذه الشاشة أو صورة منها في رونق كافيه للحصول على الخصم</p>
+            </div>
+
+            <div class="rq-v-collab">
+              <span>بالتعاون مع جوار الصفوة</span>
+              <i aria-hidden="true"></i>
+              <img src="assets/img/jewar-logo.png" alt="" width="92" height="22" decoding="async">
+            </div>
+            <footer class="rq-v-foot">أهلاً وسهلاً فيكم</footer>
+          </article>
+        </div>
+      </div>
+
+      <!-- Panel column: CTA, form, or how-to and actions -->
+      <div class="rq-panelcol">
+
+        <div class="rq-cta" data-when="invite">
+          <button class="rq-btn" type="button" id="rq-open-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 10.5 12 4l8.5 6.5V19a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1z"/><path d="m3.5 10.5 8.5 6 8.5-6"/></svg>
+            افتح هديتك
+          </button>
+        </div>
+
+        <section class="rq-formcard" data-when="open" aria-labelledby="rq-form-h">
+          <h2 class="rq-card-h" id="rq-form-h" tabindex="-1">اكتب بياناتك ليظهر كود الخصم</h2>
+          <p class="rq-sr" id="rq-errsum" aria-live="polite"></p>
+
+          <form class="rq-form" id="rq-form" novalidate>
+            <div class="rq-hp" aria-hidden="true">
+              <label for="rq-website">اترك هذا الحقل فارغاً</label>
+              <input id="rq-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="rq-field" id="rq-f-name">
+              <label class="rq-label" for="rq-name">الاسم</label>
+              <input class="rq-input" id="rq-name" name="name" type="text" autocomplete="name" required aria-required="true" aria-describedby="rq-name-err" maxlength="80">
+              <p class="rq-err" id="rq-name-err"></p>
+            </div>
+
+            <div class="rq-field" id="rq-f-tel">
+              <label class="rq-label" for="rq-tel">رقم الجوال (واتساب)</label>
+              <!-- Number first in the DOM so Next from the name lands on it; RTL flex keeps +966 on the left -->
+              <div class="rq-phone">
+                <input class="rq-input rq-tel" id="rq-tel" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="5X XXX XXXX" required aria-required="true" aria-describedby="rq-tel-hint rq-tel-err" maxlength="20">
+                <label class="rq-sr" for="rq-cc">مفتاح الدولة</label>
+                <input class="rq-input rq-cc" id="rq-cc" name="country_code" type="text" inputmode="tel" autocomplete="tel-country-code" value="+966" maxlength="6" aria-describedby="rq-tel-hint rq-tel-err">
+              </div>
+              <p class="rq-hint" id="rq-tel-hint">رقمك من خارج السعودية؟ غيّر مفتاح الدولة.</p>
+              <p class="rq-err" id="rq-tel-err"></p>
+            </div>
+
+            <div class="rq-row2">
+              <div class="rq-field">
+                <label class="rq-label" for="rq-org">الجهة أو الشركة <span class="rq-opt">(اختياري)</span></label>
+                <input class="rq-input" id="rq-org" name="company" type="text" autocomplete="organization" maxlength="120">
+              </div>
+              <div class="rq-field">
+                <label class="rq-label" for="rq-sector">القطاع <span class="rq-opt">(اختياري)</span></label>
+                <div class="rq-selectwrap">
+                  <select class="rq-select" id="rq-sector" name="sector">
+                    <option value="">اختر القطاع</option>
+                    <option value="شركة حج وعمرة">شركة حج وعمرة</option>
+                    <option value="فندق">فندق</option>
+                    <option value="وكالة سفر">وكالة سفر</option>
+                    <option value="زائر">زائر</option>
+                    <option value="أخرى">أخرى</option>
+                  </select>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6.5 9.5 5.5 5.5 5.5-5.5"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="rq-field">
+              <label class="rq-check">
+                <input id="rq-consent" name="consent" type="checkbox">
+                <span>أوافق على تواصل جوار الصفوة معي بخصوص خدماتها <span class="rq-opt">(اختياري)</span></span>
+              </label>
+            </div>
+
+            <p class="rq-formerr" id="rq-formerr" aria-live="assertive"></p>
+
+            <button class="rq-btn" type="submit" id="rq-submit">
+              <span class="rq-spin" aria-hidden="true"></span>
+              <svg class="rq-btn-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 7.6-1.7"/></svg>
+              <span id="rq-submit-t">أظهر كود الخصم</span>
+            </button>
+          </form>
+        </section>
+
+        <section class="rq-howto-card" data-when="voucher" aria-labelledby="rq-next-h">
+          <h2 class="rq-next-h" id="rq-next-h">كيف تستخدم هديتك</h2>
+          <ol class="rq-howto">
+            <li>
+              <span class="rq-howto-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16"/><circle cx="12" cy="12" r="3"/></svg></span>
+              <div><b>احفظها</b><span class="rq-howto-t">خذ صورة للشاشة تظهر فيها القسيمة كاملة.</span></div>
+            </li>
+            <li>
+              <span class="rq-howto-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10" r="2.4"/></svg></span>
+              <div><b>زُر رونق كافيه</b><span class="rq-howto-t">في العزيزية الجنوبية بمكة، نحو 9 دقائق من الحرم بالسيارة.</span></div>
+            </li>
+            <li>
+              <span class="rq-howto-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></span>
+              <div><b>اعرض الشاشة عند الطلب</b><span class="rq-howto-t">يُطبَّق خصم <span dir="ltr">50%</span> على طلبك كله، بدون حد أقصى.</span></div>
+            </li>
+          </ol>
+        </section>
+
+        <div class="rq-actions" data-when="voucher">
+          <div class="rq-actions-row" id="rq-actions-row">
+            <button class="rq-btn rq-btn-2" type="button" id="rq-save">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16"/><circle cx="12" cy="12" r="3"/></svg>
+              احفظ الفوتشر
+            </button>
+            <button class="rq-linkbtn" type="button" id="rq-reset">تسجيل زائر آخر</button>
+          </div>
+          <div class="rq-savenote" id="rq-savenote" role="status" hidden>
+            <p>خذ صورة للشاشة تظهر فيها القسيمة كاملة، واعرضها في رونق كافيه.</p>
+            <button class="rq-linkbtn" type="button" id="rq-savenote-ok">حسناً</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3YyY5wunEhsKNXVkVONbXjssBh7UVnA_Wcxxmv3ZCQQ2CK/exec';
+
+(function () {
+  'use strict';
+  var page = document.getElementById('rq-gift');
+  if (!page) return;
+
+  var STORE_KEY = 'rawnaq-gift-v1';
+  var SOURCE = 'hajj-expo-2026';
+  var TIMEOUT_MS = 15000;
+  var SAMPLE_NAME = 'ضيف جوار';
+  var SAMPLE_CODE = 'RWN-7K3Q';
+  var MSG_FAIL = 'تعذّر التسجيل الآن، حاول مرة أخرى';
+  var MONTHS = ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'];
+
+  /* Test modes. ?mock=1 never touches the network. ?demo=voucher shows a sample and never touches storage. */
+  var params = {};
+  try { (window.location.search || '').replace(/^\?/, '').split('&').forEach(function (p) { var kv = p.split('='); if (kv[0]) params[kv[0]] = kv[1] || ''; }); } catch (e) {}
+  var MOCK = params.mock === '1';
+  var DEMO = params.demo === 'voucher';
+
+  var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+  function still() { return !!(mq && mq.matches); }
+  function q(s) { return page.querySelector(s); }
+  function qa(s) { return Array.prototype.slice.call(page.querySelectorAll(s)); }
+
+  var state = null;
+  var guest = '';
+  var run = 0;
+  var busy = false;
+  var sampleShown = false;
+
+  var el = {
+    env: q('.rq-env'), peek: q('.rq-peek'), seal: q('.rq-seal'), stagecol: q('.rq-stagecol'),
+    cta: q('.rq-cta'), intro: q('.rq-intro'), formcard: q('.rq-formcard'),
+    vwrap: q('.rq-voucher-wrap'), voucher: q('.rq-voucher'), howto: q('.rq-howto-card'), actions: q('.rq-actions'),
+    mask: q('.rq-code-mask'), live: q('#rq-live'), code: q('#rq-code'), until: q('#rq-until'), untilLabel: q('#rq-until-label'),
+    existing: q('#rq-existing'), sample: q('#rq-sample'),
+    formH: q('#rq-form-h'), voucherH: q('#rq-v-title'), form: q('#rq-form'), errsum: q('#rq-errsum'), formErr: q('#rq-formerr'),
+    submit: q('#rq-submit'), submitT: q('#rq-submit-t'), hp: q('#rq-website'),
+    openBtn: q('#rq-open-btn'), bursts: qa('.rq-burst'),
+    actionsRow: q('#rq-actions-row'), saveBtn: q('#rq-save'), saveNote: q('#rq-savenote'), saveOk: q('#rq-savenote-ok'), reset: q('#rq-reset')
+  };
+
+  /* ---------- storage (per-device convenience; the sheet is the record) ---------- */
+  function validRecord(r) {
+    return !!(r && typeof r.name === 'string' && typeof r.code === 'string' && /^[A-Za-z0-9-]{3,24}$/.test(r.code));
+  }
+  function loadSaved() {
+    try {
+      var raw = window.localStorage.getItem(STORE_KEY);
+      if (!raw) return null;
+      var r = JSON.parse(raw);
+      if (validRecord(r)) return { name: r.name.slice(0, 80), code: r.code, expiresAt: typeof r.expiresAt === 'string' ? r.expiresAt : '' };
+    } catch (e) {}
+    return null;
+  }
+  function saveRecord(r) {
+    try { window.localStorage.setItem(STORE_KEY, JSON.stringify({ name: r.name, code: r.code, expiresAt: r.expiresAt })); } catch (e) {}
+  }
+  function forgetRecord() {
+    try { window.localStorage.removeItem(STORE_KEY); } catch (e) {}
+  }
+
+  /* ---------- dates: server sends yyyy-MM-dd, shown as "9 ديسمبر 2026" ---------- */
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function arDate(iso) {
+    var m = /^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(String(iso || '').trim());
+    if (!m) return '';
+    var mo = parseInt(m[2], 10), d = parseInt(m[3], 10);
+    if (mo < 1 || mo > 12 || d < 1 || d > 31) return '';
+    return d + ' ' + MONTHS[mo - 1] + ' ' + m[1];
+  }
+  function todayParts() {
+    try {
+      var o = {};
+      new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Riyadh', year: 'numeric', month: 'numeric', day: 'numeric' })
+        .formatToParts(new Date()).forEach(function (p) { o[p.type] = parseInt(p.value, 10); });
+      if (o.year && o.month && o.day) return o;
+    } catch (e) {}
+    var t = new Date();
+    return { year: t.getFullYear(), month: t.getMonth() + 1, day: t.getDate() };
+  }
+  /* Same rule as the server: same day next month, clamped to that month's last day */
+  function monthFromToday() {
+    var t = todayParts(), y = t.year, m = t.month + 1;
+    if (m > 12) { m = 1; y += 1; }
+    var last = new Date(y, m, 0).getDate();
+    return y + '-' + pad2(m) + '-' + pad2(Math.min(t.day, last));
+  }
+
+  /* ---------- motion helpers ---------- */
+  var NOOP = { finished: Promise.resolve(), cancel: function () {} };
+  function play(node, frames, opts) {
+    if (!node || typeof node.animate !== 'function' || still()) return NOOP;
+    try { return node.animate(frames, opts); } catch (e) { return NOOP; }
+  }
+  /* Resolves when the animation ends, or after its scheduled end if frames are throttled (hidden iframe) */
+  function done(a) {
+    var end = 0;
+    try { end = a.effect && a.effect.getComputedTiming ? (a.effect.getComputedTiming().endTime || 0) : 0; } catch (e) { end = 0; }
+    return new Promise(function (resolve) {
+      var t = window.setTimeout(resolve, end + 120);
+      a.finished.then(function () { window.clearTimeout(t); resolve(); }, function () { window.clearTimeout(t); resolve(); });
+    });
+  }
+  function cancelScripted() {
+    if (typeof page.getAnimations !== 'function') return;
+    page.getAnimations({ subtree: true }).forEach(function (a) {
+      var isCss = (window.CSSTransition && a instanceof window.CSSTransition) || (window.CSSAnimation && a instanceof window.CSSAnimation);
+      if (!isCss) a.cancel();
+    });
+  }
+  function focusQuiet(node) {
+    if (!node) return;
+    try { node.focus({ preventScroll: true }); } catch (e) { node.focus(); }
+  }
+  function announce(msg) {
+    el.live.textContent = '';
+    window.setTimeout(function () { el.live.textContent = msg; }, 80);
+  }
+  function toTop() {
+    try { window.scrollTo(0, 0); } catch (e) {}
+  }
+
+  /* Long names would wrap the thanks line: fall back to first + family name, then first name
+     (particles such as بن / آل / عبد stay attached to the word after them). */
+  var PARTICLES = ['عبد', 'أبو', 'ابو', 'أم', 'ام', 'آل', 'ال', 'بن', 'ابن', 'بنت', 'abd', 'abu', 'al', 'el', 'bin', 'ibn', 'bint'];
+  function isParticle(w) { return PARTICLES.indexOf(String(w).toLowerCase()) > -1; }
+  function nameForms(full) {
+    var w = full.split(' ');
+    var i = 1, first = w[0];
+    if (w.length > 1 && isParticle(w[0])) { first = w[0] + ' ' + w[1]; i = 2; }
+    var j = w.length - 1, last = w[j];
+    if (j - 1 >= i && isParticle(w[j - 1])) { last = w[j - 1] + ' ' + last; j--; }
+    if (j < i) return [full];
+    return [full, first + ' ' + last, first];
+  }
+  function paintNames() {
+    var forms = nameForms(guest || SAMPLE_NAME);
+    var thanks = q('.rq-v-thanks');
+    for (var k = 0; k < forms.length; k++) {
+      qa('[data-rq-name]').forEach(function (n) { n.textContent = forms[k]; });
+      if (state !== 'voucher' || !thanks.offsetHeight) return;
+      var lh = parseFloat(window.getComputedStyle(thanks).lineHeight) || 24;
+      if (thanks.offsetHeight < lh * 1.5) return;
+    }
+  }
+
+  /* ---------- states: invite, open, voucher ---------- */
+  function paint(s) {
+    var idx = s === 'invite' ? 1 : (s === 'open' ? 2 : 3);
+    page.setAttribute('data-state', s);
+    qa('.rq-steps > li').forEach(function (li, i) {
+      var n = i + 1;
+      var isDone = n < idx || s === 'voucher';
+      var isCur = !isDone && n === idx;
+      li.classList.toggle('rq-is-done', isDone);
+      li.classList.toggle('rq-is-current', isCur);
+      if (isCur) li.setAttribute('aria-current', 'step'); else li.removeAttribute('aria-current');
+      var st = li.querySelector('.rq-step-st');
+      if (st) st.textContent = isDone ? '، تمّت' : '';
+    });
+    state = s;
+    paintNames();
+  }
+  function instant(s) {
+    run++;
+    cancelScripted();
+    page.classList.add('rq-instant');
+    paint(s);
+    if (el.mask) el.mask.hidden = true;
+    void page.offsetWidth;
+    window.requestAnimationFrame(function () {
+      window.requestAnimationFrame(function () { page.classList.remove('rq-instant'); });
+    });
+  }
+
+  function fillVoucher(rec, opts) {
+    guest = String(rec.name || '').replace(/\s+/g, ' ').trim() || SAMPLE_NAME;
+    el.code.textContent = rec.code;
+    var d = arDate(rec.expiresAt);
+    el.untilLabel.textContent = d ? 'صالح حتى' : 'صالح لمدة';
+    el.until.textContent = d || 'شهر من تاريخ التسجيل';
+    el.existing.hidden = !opts.existing;
+    el.sample.hidden = !opts.sample;
+    sampleShown = !!opts.sample;
+    hideSaveNote();
+  }
+
+  /* Invite to open: the seal is pressed, the flap swings open, the voucher rises */
+  function openEnvelope() {
+    if (state !== 'invite') return;
+    var token = ++run;
+    var a = play(el.seal, [{ transform: 'scale(1)' }, { transform: 'scale(.9)', offset: 0.45 }, { transform: 'scale(1)' }], { duration: 280, easing: 'cubic-bezier(.3,0,.2,1)' });
+    var b = play(el.cta, [{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateY(8px)' }], { duration: 200, easing: 'ease-in', fill: 'forwards' });
+    Promise.all([done(a), done(b)]).then(function () {
+      if (token !== run) return;
+      var before = el.stagecol.getBoundingClientRect().top;
+      paint('open');
+      b.cancel();
+      toTop();
+      /* The intro gets shorter on phones: glide the envelope to its new place instead of jumping */
+      var dy = before - el.stagecol.getBoundingClientRect().top;
+      if (Math.abs(dy) > 1) play(el.stagecol, [{ transform: 'translateY(' + dy + 'px)' }, { transform: 'none' }], { duration: 520, easing: 'cubic-bezier(.2,.8,.2,1)' });
+      [el.intro, el.formcard].forEach(function (n, i) {
+        play(n, [{ opacity: 0, transform: 'translateY(14px)' }, { opacity: 1, transform: 'none' }], { duration: 480, delay: 760 + i * 110, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'backwards' });
+      });
+      el.bursts.forEach(function (n, i) {
+        play(n, [
+          { opacity: 0, transform: 'scale(.2) rotate(0deg)' },
+          { opacity: 1, transform: 'scale(1) rotate(45deg)', offset: 0.45 },
+          { opacity: 0, transform: 'scale(.6) rotate(90deg)' }
+        ], { duration: 900, delay: 1120 + i * 150, easing: 'ease-out' });
+      });
+      announce('فُتح الظرف. هديتك خصم 50% في رونق كافيه. اكتب بياناتك ليظهر كود الخصم.');
+      focusQuiet(el.formH);
+    });
+  }
+
+  /* Open to voucher: the envelope drops away, the full voucher rises, the code unmasks */
+  function revealVoucher(existing) {
+    var token = ++run;
+    /* Phones keep the envelope slightly scaled in the open state: animate from that transform, not from none */
+    var base = '';
+    try { base = window.getComputedStyle(el.env).transform; } catch (e) { base = ''; }
+    if (!base || base === 'none') base = '';
+    var a = play(el.env, [{ transform: base + ' translateY(0)', opacity: 1 }, { transform: base + ' translateY(16%)', opacity: 0 }], { duration: 420, easing: 'cubic-bezier(.5,0,.75,0)', fill: 'forwards' });
+    var b = play(el.peek, [{ transform: 'translateY(-68%)' }, { transform: 'translateY(-84%)' }], { duration: 420, easing: 'cubic-bezier(.3,0,.2,1)', fill: 'forwards' });
+    var c = play(el.formcard, [{ opacity: 1 }, { opacity: 0 }], { duration: 260, fill: 'forwards' });
+    var d = play(el.intro, [{ opacity: 1 }, { opacity: 0 }], { duration: 260, fill: 'forwards' });
+    Promise.all([done(a), done(b), done(c), done(d)]).then(function () {
+      if (token !== run) return;
+      paint('voucher');
+      [a, b, c, d].forEach(function (x) { x.cancel(); });
+      toTop();
+      play(el.vwrap, [{ opacity: 0, transform: 'translateY(28px) scale(.985)' }, { opacity: 1, transform: 'none' }], { duration: 640, easing: 'cubic-bezier(.16,1,.3,1)', fill: 'backwards' });
+      [el.intro, el.howto, el.actions].forEach(function (n, i) {
+        play(n, [{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'none' }], { duration: 460, delay: 280 + i * 90, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'backwards' });
+      });
+      if (el.mask && !still()) {
+        el.mask.hidden = false;
+        var m = play(el.mask, [{ clipPath: 'inset(0 0 0 0 round 9px)' }, { clipPath: 'inset(0 0 0 100% round 9px)' }], { duration: 640, delay: 720, easing: 'cubic-bezier(.65,0,.35,1)', fill: 'both' });
+        done(m).then(function () { el.mask.hidden = true; m.cancel(); });
+      }
+      announce((existing ? 'سبق تسجيلك بهذا الرقم، وهذه قسيمتك. ' : 'شكراً للتسجيل يا ' + guest + '. ') + 'كود الخصم ' + el.code.textContent + '، ' + el.untilLabel.textContent + ' ' + el.until.textContent + '.');
+      focusQuiet(el.voucherH);
+    });
+  }
+
+  function showVoucherNow(rec, opts) {
+    fillVoucher(rec, opts);
+    instant('voucher');
+    toTop();
+  }
+
+  /* ---------- form validation ---------- */
+  var f = { name: q('#rq-name'), cc: q('#rq-cc'), tel: q('#rq-tel'), org: q('#rq-org'), sector: q('#rq-sector'), consent: q('#rq-consent') };
+  var errOut = { name: q('#rq-name-err'), tel: q('#rq-tel-err') };
+  var wrap = { name: q('#rq-f-name'), tel: q('#rq-f-tel') };
+  var KEYS = ['name', 'tel'];
+  var EASTERN = /[\u0660-\u0669\u06F0-\u06F9]/;
+
+  function ascii(s) {
+    return String(s)
+      .replace(/[\u0660-\u0669]/g, function (d) { return String(d.charCodeAt(0) - 0x0660); })
+      .replace(/[\u06F0-\u06F9]/g, function (d) { return String(d.charCodeAt(0) - 0x06F0); });
+  }
+  function cleanName() { return f.name.value.replace(/\s+/g, ' ').trim(); }
+
+  /* Phone to E.164. Saudi: 05XXXXXXXX, 5XXXXXXXX or 9665XXXXXXXX become +9665XXXXXXXX.
+     A number typed with + or 00 is kept as typed; otherwise the country code box is prefixed. */
+  function phoneE164() {
+    var cc = ascii(f.cc.value).replace(/[\s()\-]/g, '');
+    var raw = ascii(f.tel.value).replace(/[\s().\-\u200E\u200F\u202A-\u202E]/g, '');
+    if (!raw) return { error: 'empty' };
+    var num;
+    if (/^(\+|00)/.test(raw)) {
+      var intl = raw.replace(/^(\+|00)/, '');
+      if (!/^\d+$/.test(intl)) return { error: 'chars' };
+      num = '+' + intl;
+    } else {
+      if (!/^\d+$/.test(raw)) return { error: 'chars' };
+      var c = cc.replace(/^(\+|00)/, '');
+      if (!/^[1-9]\d{0,3}$/.test(c)) return { error: 'cc' };
+      if (c === '966') {
+        var n = raw;
+        if (n.length === 12 && n.indexOf('9665') === 0) n = n.slice(3);
+        n = n.replace(/^0/, '');
+        num = '+966' + n;
+      } else {
+        num = '+' + c + raw.replace(/^0/, '');
+      }
+    }
+    if (/^\+9660/.test(num)) num = '+966' + num.slice(5);
+    if (num.indexOf('+966') === 0) return /^\+9665\d{8}$/.test(num) ? { value: num } : { error: 'sa' };
+    return /^\+[1-9]\d{7,14}$/.test(num) ? { value: num } : { error: 'len' };
+  }
+
+  var checks = {
+    name: function () {
+      var v = cleanName();
+      if (!v) return { msg: 'اكتب اسمك.', node: f.name };
+      if (/[0-9\u0660-\u0669\u06F0-\u06F9]/.test(v)) return { msg: 'اكتب اسمك بالحروف فقط، دون أرقام.', node: f.name };
+      if (v.replace(/[\s.'\-]/g, '').length < 2) return { msg: 'الاسم قصير، اكتبه كاملاً.', node: f.name };
+      return null;
+    },
+    tel: function () {
+      var r = phoneE164();
+      if (!r.error) return null;
+      if (r.error === 'empty') return { msg: 'اكتب رقم جوالك.', node: f.tel };
+      if (r.error === 'chars') return { msg: 'رقم الجوال يقبل الأرقام فقط.', node: f.tel };
+      if (r.error === 'cc') return { msg: 'مفتاح الدولة غير صحيح. اكتبه بهذا الشكل: \u2066+966\u2069', node: f.cc };
+      if (r.error === 'sa') return { msg: 'رقم الجوال السعودي 9 أرقام ويبدأ بـ 5، مثل 5XXXXXXXX.', node: f.tel };
+      return { msg: 'تأكد من الرقم ومفتاح الدولة.', node: f.tel };
+    }
+  };
+
+  function setErr(key, res) {
+    errOut[key].textContent = res ? res.msg : '';
+    wrap[key].classList.toggle('rq-has-err', !!res);
+    var inputs = key === 'tel' ? [f.cc, f.tel] : [f[key]];
+    inputs.forEach(function (inp) {
+      if (res && res.node === inp) inp.setAttribute('aria-invalid', 'true');
+      else inp.removeAttribute('aria-invalid');
+    });
+  }
+  function validateAll() {
+    var out = [];
+    KEYS.forEach(function (k) { var r = checks[k](); setErr(k, r); if (r) out.push(r); });
+    return out;
+  }
+  function summaryText(n) {
+    if (!n) return '';
+    if (n === 1) return 'بقي حقل واحد يحتاج إلى تصحيح.';
+    return 'بقي حقلان يحتاجان إلى تصحيح.';
+  }
+  function showErrors(list) {
+    el.errsum.textContent = '';
+    window.setTimeout(function () { el.errsum.textContent = summaryText(list.length); }, 60);
+    if (list.length) list[0].node.focus();
+  }
+  function setFormErr(msg) {
+    el.formErr.textContent = '';
+    if (msg) window.setTimeout(function () { el.formErr.textContent = msg; }, 40);
+  }
+
+  KEYS.forEach(function (k) {
+    var inputs = k === 'tel' ? [f.cc, f.tel] : [f[k]];
+    inputs.forEach(function (inp) {
+      inp.addEventListener('input', function () {
+        if ((inp === f.tel || inp === f.cc) && EASTERN.test(inp.value)) inp.value = ascii(inp.value);
+        if (wrap[k].classList.contains('rq-has-err')) setErr(k, checks[k]());
+      });
+      inp.addEventListener('blur', function () {
+        if (inp === f.cc) {
+          var v = ascii(f.cc.value).replace(/\s/g, '');
+          if (/^\d{1,4}$/.test(v)) f.cc.value = '+' + v;
+          else if (/^00\d{1,4}$/.test(v)) f.cc.value = '+' + v.slice(2);
+        }
+        if (inp.value.trim() !== '' && !(inp === f.cc && !f.tel.value.trim())) setErr(k, checks[k]());
+      });
+    });
+  });
+
+  /* ---------- submit ---------- */
+  function setBusy(on) {
+    busy = on;
+    el.submit.disabled = on;
+    el.submit.classList.toggle('rq-is-busy', on);
+    el.form.setAttribute('aria-busy', on ? 'true' : 'false');
+    el.submitT.textContent = on ? 'جارٍ التسجيل...' : 'أظهر كود الخصم';
+  }
+
+  function send(payload) {
+    if (MOCK) {
+      return new Promise(function (resolve) {
+        window.setTimeout(function () {
+          resolve({ ok: true, existing: false, name: payload.name, code: SAMPLE_CODE, expiresAt: monthFromToday() });
+        }, 700);
+      });
+    }
+    if (!/^https:\/\//.test(ENDPOINT)) return Promise.reject(new Error('endpoint not set'));
+    return new Promise(function (resolve, reject) {
+      var ctrl = typeof AbortController === 'function' ? new AbortController() : null;
+      var settled = false;
+      var timer = window.setTimeout(function () {
+        if (settled) return;
+        settled = true;
+        try { if (ctrl) ctrl.abort(); } catch (e) {}
+        reject(new Error('timeout'));
+      }, TIMEOUT_MS);
+      var opts = { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) };
+      if (ctrl) opts.signal = ctrl.signal;
+      fetch(ENDPOINT, opts)
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          if (settled) return;
+          settled = true; window.clearTimeout(timer); resolve(data);
+        }, function (err) {
+          if (settled) return;
+          settled = true; window.clearTimeout(timer); reject(err);
+        });
+    });
+  }
+
+  function fail(msg) {
+    setBusy(false);
+    setFormErr(msg || MSG_FAIL);
+    /* Keep the message and the button in view inside the frame, then focus the button
+       (a plain focus also brings it into view on the host page) */
+    window.setTimeout(function () {
+      var r = el.submit.getBoundingClientRect();
+      if (r.bottom > window.innerHeight) window.scrollBy(0, Math.ceil(r.bottom - window.innerHeight + 12));
+      if (document.activeElement === el.submit) el.submit.blur();
+      el.submit.focus();
+    }, 60);
+  }
+
+  el.form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (busy) return;
+    setFormErr('');
+    var list = validateAll();
+    if (list.length) { showErrors(list); return; }
+    el.errsum.textContent = '';
+
+    var payload = {
+      name: cleanName(),
+      phone: phoneE164().value,
+      company: f.org.value.replace(/\s+/g, ' ').trim(),
+      sector: f.sector.value,
+      consent: !!f.consent.checked,
+      source: SOURCE
+    };
+    setBusy(true);
+    announce('جارٍ التسجيل...');
+
+    /* Honeypot filled: an automated submit. Send nothing. */
+    if (el.hp && el.hp.value) { window.setTimeout(function () { fail(); }, 900); return; }
+
+    send(payload).then(function (data) {
+      try {
+        if (data && data.ok === true && typeof data.code === 'string' && data.code) {
+          var rec = {
+            name: (typeof data.name === 'string' && data.name.trim()) ? data.name.trim().slice(0, 80) : payload.name,
+            code: String(data.code).slice(0, 24),
+            expiresAt: typeof data.expiresAt === 'string' ? data.expiresAt : ''
+          };
+          saveRecord(rec);
+          setBusy(false);
+          fillVoucher(rec, { existing: data.existing === true, sample: false });
+          revealVoucher(data.existing === true);
+          return;
+        }
+        if (data && data.ok === false && data.error === 'invalid_phone') {
+          setBusy(false);
+          setErr('tel', { msg: 'تعذّر قبول رقم الجوال. تأكد من الرقم ومفتاح الدولة.', node: f.tel });
+          f.tel.focus();
+          return;
+        }
+        if (data && data.ok === false && data.error === 'invalid_name') {
+          setBusy(false);
+          setErr('name', { msg: 'تعذّر قبول الاسم. اكتب اسمك بالحروف.', node: f.name });
+          f.name.focus();
+          return;
+        }
+        fail();
+      } catch (err) { fail(); }
+    }, function () { fail(); });
+  });
+
+  /* ---------- buttons ---------- */
+  el.openBtn.addEventListener('click', openEnvelope);
+  /* The sealed envelope is the hero: tapping it opens it too (the button stays the accessible control) */
+  q('.rq-stagebox').addEventListener('click', function () { if (state === 'invite') openEnvelope(); });
+
+  function hideSaveNote() {
+    el.saveNote.hidden = true;
+    el.actionsRow.hidden = false;
+  }
+  var VOUCHER_SHADOW = '0 1px 2px rgba(54,23,15,.08),0 22px 44px -24px rgba(54,23,15,.5)';
+  el.saveBtn.addEventListener('click', function () {
+    el.actionsRow.hidden = true;
+    el.saveNote.hidden = false;
+    focusQuiet(el.saveOk);
+    play(el.voucher, [
+      { boxShadow: '0 0 0 0 rgba(186,144,72,0),' + VOUCHER_SHADOW },
+      { boxShadow: '0 0 0 6px rgba(186,144,72,.55),' + VOUCHER_SHADOW },
+      { boxShadow: '0 0 0 0 rgba(186,144,72,0),' + VOUCHER_SHADOW }
+    ], { duration: 1100, delay: 200, easing: 'ease-out' });
+  });
+  el.saveOk.addEventListener('click', function () {
+    hideSaveNote();
+    focusQuiet(el.saveBtn);
+  });
+
+  el.reset.addEventListener('click', function () {
+    if (!sampleShown) forgetRecord();
+    el.form.reset();
+    KEYS.forEach(function (k) { setErr(k, null); });
+    el.errsum.textContent = '';
+    setFormErr('');
+    setBusy(false);
+    guest = '';
+    el.existing.hidden = true;
+    el.sample.hidden = true;
+    sampleShown = false;
+    hideSaveNote();
+    instant('invite');
+    toTop();
+    window.setTimeout(function () { focusQuiet(el.openBtn); }, 60);
+  });
+
+  window.addEventListener('resize', function () { if (state === 'voucher') paintNames(); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (state === 'voucher') paintNames(); });
+
+  /* ---------- start ---------- */
+  if (DEMO) {
+    showVoucherNow({ name: SAMPLE_NAME, code: SAMPLE_CODE, expiresAt: monthFromToday() }, { existing: false, sample: true });
+  } else {
+    var saved = loadSaved();
+    if (saved) showVoucherNow(saved, { existing: false, sample: false });
+    else instant('invite');
+  }
+})();
+</script>
+</body>
+</html>
