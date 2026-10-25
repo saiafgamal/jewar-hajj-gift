@@ -167,8 +167,8 @@ img,svg{display:block}
 .rq-v-meta p{display:flex;align-items:center;gap:6px;margin:0}
 .rq-v-meta svg{width:18px;height:18px;flex:none;color:var(--rq-brown)}
 .rq-v-meta b{font-weight:800;color:var(--rq-espresso)}
-.rq-v-enjoy{display:flex;align-items:center;gap:8px;margin:4px 0 0;font-size:13.5px;line-height:1.5;font-weight:700;color:var(--rq-brown);text-wrap:pretty}
-.rq-v-enjoy svg{width:18px;height:18px;flex:none;color:var(--rq-brown)}
+.rq-v-enjoy{display:flex;align-items:flex-start;gap:8px;margin:4px 0 0;font-size:13.5px;line-height:1.5;font-weight:700;color:var(--rq-brown);text-wrap:pretty}
+.rq-v-enjoy svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--rq-brown)}
 .rq-v-where{margin-top:9px;padding-top:9px;border-top:1px solid var(--rq-cream-line)}
 .rq-v-addr{display:flex;align-items:flex-start;gap:6px;margin:0;font-size:13.5px;line-height:1.55;font-weight:600;color:var(--rq-espresso)}
 .rq-v-addr b{font-weight:800}
@@ -217,7 +217,8 @@ img,svg{display:block}
 .rq-input:focus,.rq-select:focus{outline:2px solid var(--rq-blue);outline-offset:1px;border-color:var(--rq-blue)}
 .rq-field.rq-has-err .rq-input[aria-invalid="true"]{border-color:var(--rq-err);box-shadow:inset 0 0 0 1px var(--rq-err)}
 .rq-hint{margin:4px 0 0;font-size:12.5px;line-height:1.5;color:var(--rq-ink-2)}
-.rq-err{display:flex;align-items:flex-start;gap:6px;margin:5px 0 0;font-size:13.5px;line-height:1.5;font-weight:700;color:var(--rq-err)}
+.rq-field.rq-has-err .rq-hint{display:none}
+.rq-err{display:flex;align-items:flex-start;gap:6px;margin:3px 0 0;font-size:13.5px;line-height:1.5;font-weight:700;color:var(--rq-err)}
 .rq-err:empty{display:none}
 .rq-err::before{content:"!";flex:none;display:grid;place-items:center;width:17px;height:17px;margin-top:2px;border-radius:50%;background:var(--rq-err);color:#fff;font-size:11.5px;font-weight:900;line-height:1}
 .rq-phone{display:flex;gap:8px}
@@ -267,9 +268,22 @@ img,svg{display:block}
   .rq-page[data-state="voucher"] .rq-intro{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
   .rq-page[data-state="voucher"] .rq-main{padding-top:12px}
   .rq-page[data-state="voucher"] .rq-grid{gap:12px}
+  /* Open: the envelope starts settling while the flap swings, so the flap's point stays inside the panel */
+  .rq-env,.rq-stage{transition-delay:300ms}
+  /* Form errors must not push the submit button out of the frame */
+  .rq-page[data-state="open"] .rq-field{margin-top:8px}
+  .rq-page[data-state="open"] .rq-main{padding-bottom:4px}
+  .rq-check{padding:8px 12px}
 }
 @media (min-width:600px) and (max-width:899px){
   .rq-stagebox{--rq-w:340px}
+  .rq-page[data-state="invite"] .rq-main{justify-content:center}
+}
+@media (max-width:399px){
+  .rq-steps{flex-wrap:nowrap;font-size:12.5px}
+  .rq-steps li{gap:5px}
+  .rq-steps li+li::before{width:10px;margin-inline:5px 3px}
+  .rq-step-dot{width:22px;height:22px;font-size:12px}
 }
 @media (max-width:374px){
   .rq-h1{font-size:24px}
@@ -305,6 +319,9 @@ img,svg{display:block}
   .rq-howto-card{display:block;padding:18px 20px;border:1px solid var(--rq-line);border-radius:16px;background:#fff;box-shadow:var(--rq-shadow);margin-bottom:14px}
   .rq-actions{max-width:none}
 }
+@media (min-width:900px) and (max-width:1099px){
+  .rq-v-map svg{display:none}
+}
 @media (min-width:1100px){
   .rq-stagebox{--rq-w:420px}
   .rq-grid{column-gap:64px}
@@ -315,6 +332,9 @@ img,svg{display:block}
   .rq-page *,.rq-page *::before,.rq-page *::after{transition:none!important;animation:none!important}
   .rq-is-busy .rq-spin{animation:rq-spin 1.6s linear infinite!important}
 }
+.rq-site{display:none;justify-content:center;align-items:center;padding-block:14px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));border-bottom:1px solid #E5EAF0;background:#fff}
+.rq-standalone .rq-site{display:flex}
+.rq-site img{display:block;height:34px;width:auto}
 </style>
 </head>
 <body>
@@ -339,7 +359,8 @@ img,svg{display:block}
 
   <p id="rq-live" class="rq-sr" aria-live="polite"></p>
 
-  <div class="rq-main">
+<header class="rq-site"><img src="assets/img/jewar-logo.png" alt="جوار الصفوة" width="1228" height="293"></header>
+  <main class="rq-main">
     <div class="rq-grid">
 
       <!-- Intro (copy changes per state) -->
@@ -354,11 +375,11 @@ img,svg{display:block}
         </div>
         <div data-when="open">
           <h1 class="rq-h1">هديتك: خصم <span dir="ltr">50%</span> في رونق كافيه</h1>
-          <p class="rq-lead">الخصم على طلبك كله، ويظهر كود الخصم مع اسمك بعد التسجيل.</p>
+          <p class="rq-lead">الخصم على طلبك كله، ويظهر الكود مع اسمك بعد التسجيل.</p>
         </div>
         <div data-when="voucher">
           <h1 class="rq-h1">هديتك جاهزة يا <span data-rq-name>ضيف جوار</span></h1>
-          <p class="rq-lead">شكراً لزيارتك جناح جوار الصفوة. احفظ القسيمة واعرضها في رونق كافيه، وبالعافية عليك.</p>
+          <p class="rq-lead">سعدنا بزيارتك جناح جوار الصفوة. احفظ القسيمة واعرضها في رونق كافيه، وبالعافية عليك.</p>
         </div>
       </div>
 
@@ -508,7 +529,7 @@ img,svg{display:block}
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
                   <span><span id="rq-until-label">صالح حتى</span> <b id="rq-until">9 ديسمبر 2026</b></span>
                 </p>
-                <p><b>بدون حد أقصى</b></p>
+                <p><b>بدون حد أقصى للخصم</b></p>
               </div>
 
               <p class="rq-v-enjoy">
@@ -519,7 +540,7 @@ img,svg{display:block}
               <div class="rq-v-where">
                 <p class="rq-v-addr">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10" r="2.4"/></svg>
-                    <span><b>رونق كافيه</b> · العزيزية الجنوبية · فندق درة الجوار · قبل المسجد القطري، مكة</span>
+                    <span><b>رونق كافيه</b> · العزيزية الجنوبية · فندق درة الجوار · <span class="rq-nowrap">قبل المسجد القطري، مكة</span></span>
                 </p>
                 <p class="rq-v-dist">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 15.5v-3l2-5a1.5 1.5 0 0 1 1.4-1h10.2a1.5 1.5 0 0 1 1.4 1l2 5v3a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1z"/><path d="M3.5 12.5h17M6.5 16.5v2M17.5 16.5v2"/></svg>
@@ -565,7 +586,7 @@ img,svg{display:block}
           <h2 class="rq-card-h" id="rq-form-h" tabindex="-1">اكتب بياناتك ليظهر كود الخصم</h2>
           <p class="rq-sr" id="rq-errsum" aria-live="polite"></p>
 
-          <form class="rq-form" id="rq-form" novalidate>
+          <form class="rq-form" id="rq-form" method="post" action="#" novalidate>
             <div class="rq-hp" aria-hidden="true">
               <label for="rq-website">اترك هذا الحقل فارغاً</label>
               <input id="rq-website" name="website" type="text" tabindex="-1" autocomplete="off">
@@ -617,7 +638,7 @@ img,svg{display:block}
               </label>
             </div>
 
-            <p class="rq-formerr" id="rq-formerr" aria-live="assertive"></p>
+            <div aria-live="assertive"><p class="rq-formerr" id="rq-formerr"></p></div>
 
             <button class="rq-btn" type="submit" id="rq-submit">
               <span class="rq-spin" aria-hidden="true"></span>
@@ -640,7 +661,7 @@ img,svg{display:block}
             </li>
             <li>
               <span class="rq-howto-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></span>
-              <div><b>اعرض الشاشة عند الطلب</b><span class="rq-howto-t">يُطبَّق خصم <span dir="ltr">50%</span> على طلبك كله، بدون حد أقصى.</span></div>
+              <div><b>اعرض القسيمة عند طلبك</b><span class="rq-howto-t">يُطبَّق خصم <span dir="ltr">50%</span> على طلبك كله، بدون حد أقصى.</span></div>
             </li>
           </ol>
         </section>
@@ -660,10 +681,11 @@ img,svg{display:block}
         </div>
       </div>
     </div>
-  </div>
+  </main>
 </div>
 
 <script>
+try { if (window.top === window.self) document.documentElement.classList.add('rq-standalone'); } catch (e) {}
 const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3YyY5wunEhsKNXVkVONbXjssBh7UVnA_Wcxxmv3ZCQQ2CK/exec';
 
 (function () {
@@ -684,6 +706,8 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
   try { (window.location.search || '').replace(/^\?/, '').split('&').forEach(function (p) { var kv = p.split('='); if (kv[0]) params[kv[0]] = kv[1] || ''; }); } catch (e) {}
   var MOCK = params.mock === '1';
   var DEMO = params.demo === 'voucher';
+  /* Mock vouchers are samples: kept under their own key so a normal visit never shows one as real */
+  if (MOCK) STORE_KEY = 'rawnaq-gift-v1-mock';
 
   var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
   function still() { return !!(mq && mq.matches); }
@@ -697,7 +721,7 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
   var sampleShown = false;
 
   var el = {
-    env: q('.rq-env'), peek: q('.rq-peek'), seal: q('.rq-seal'), stagecol: q('.rq-stagecol'),
+    steps: q('.rq-steps'), env: q('.rq-env'), peek: q('.rq-peek'), seal: q('.rq-seal'), stagecol: q('.rq-stagecol'),
     cta: q('.rq-cta'), intro: q('.rq-intro'), formcard: q('.rq-formcard'),
     vwrap: q('.rq-voucher-wrap'), voucher: q('.rq-voucher'), howto: q('.rq-howto-card'), actions: q('.rq-actions'),
     mask: q('.rq-code-mask'), live: q('#rq-live'), code: q('#rq-code'), until: q('#rq-until'), untilLabel: q('#rq-until-label'),
@@ -825,7 +849,7 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
       li.classList.toggle('rq-is-current', isCur);
       if (isCur) li.setAttribute('aria-current', 'step'); else li.removeAttribute('aria-current');
       var st = li.querySelector('.rq-step-st');
-      if (st) st.textContent = isDone ? '، تمّت' : '';
+      if (st) st.textContent = isDone ? '، تمّت هذه الخطوة' : '';
     });
     state = s;
     paintNames();
@@ -869,7 +893,7 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
       /* The intro gets shorter on phones: glide the envelope to its new place instead of jumping */
       var dy = before - el.stagecol.getBoundingClientRect().top;
       if (Math.abs(dy) > 1) play(el.stagecol, [{ transform: 'translateY(' + dy + 'px)' }, { transform: 'none' }], { duration: 520, easing: 'cubic-bezier(.2,.8,.2,1)' });
-      [el.intro, el.formcard].forEach(function (n, i) {
+      [el.intro, el.steps, el.formcard].forEach(function (n, i) {
         play(n, [{ opacity: 0, transform: 'translateY(14px)' }, { opacity: 1, transform: 'none' }], { duration: 480, delay: 760 + i * 110, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'backwards' });
       });
       el.bursts.forEach(function (n, i) {
@@ -879,7 +903,7 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
           { opacity: 0, transform: 'scale(.6) rotate(90deg)' }
         ], { duration: 900, delay: 1120 + i * 150, easing: 'ease-out' });
       });
-      announce('فُتح الظرف. هديتك خصم 50% في رونق كافيه. اكتب بياناتك ليظهر كود الخصم.');
+      announce('فُتح الظرف. هديتك خصم 50% على طلبك كله في رونق كافيه. اكتب بياناتك ليظهر كود الخصم.');
       focusQuiet(el.formH);
     });
   }
@@ -895,13 +919,15 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
     var b = play(el.peek, [{ transform: 'translateY(-68%)' }, { transform: 'translateY(-84%)' }], { duration: 420, easing: 'cubic-bezier(.3,0,.2,1)', fill: 'forwards' });
     var c = play(el.formcard, [{ opacity: 1 }, { opacity: 0 }], { duration: 260, fill: 'forwards' });
     var d = play(el.intro, [{ opacity: 1 }, { opacity: 0 }], { duration: 260, fill: 'forwards' });
-    Promise.all([done(a), done(b), done(c), done(d)]).then(function () {
+    var s = play(el.steps, [{ opacity: 1 }, { opacity: 0 }], { duration: 260, fill: 'forwards' });
+    Promise.all([done(a), done(b), done(c), done(d), done(s)]).then(function () {
       if (token !== run) return;
       paint('voucher');
-      [a, b, c, d].forEach(function (x) { x.cancel(); });
+      setBusy(false);
+      [a, b, c, d, s].forEach(function (x) { x.cancel(); });
       toTop();
       play(el.vwrap, [{ opacity: 0, transform: 'translateY(28px) scale(.985)' }, { opacity: 1, transform: 'none' }], { duration: 640, easing: 'cubic-bezier(.16,1,.3,1)', fill: 'backwards' });
-      [el.intro, el.howto, el.actions].forEach(function (n, i) {
+      [el.intro, el.steps, el.howto, el.actions].forEach(function (n, i) {
         play(n, [{ opacity: 0, transform: 'translateY(12px)' }, { opacity: 1, transform: 'none' }], { duration: 460, delay: 280 + i * 90, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'backwards' });
       });
       if (el.mask && !still()) {
@@ -926,6 +952,9 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
   var wrap = { name: q('#rq-f-name'), tel: q('#rq-f-tel') };
   var KEYS = ['name', 'tel'];
   var EASTERN = /[\u0660-\u0669\u06F0-\u06F9]/;
+  /* Letters of any script; built at run time so a browser without \p{L} support falls back instead of failing to parse */
+  var LETTER;
+  try { LETTER = new RegExp('\\p{L}', 'gu'); } catch (e) { LETTER = /[A-Za-z\u00C0-\u024F\u0621-\u064A\u066E-\u066F\u0671-\u06D3\u06FA-\u06FC\u0750-\u077F\uFB50-\uFDFB\uFE70-\uFEFC]/g; }
 
   function ascii(s) {
     return String(s)
@@ -968,16 +997,17 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
       var v = cleanName();
       if (!v) return { msg: 'اكتب اسمك.', node: f.name };
       if (/[0-9\u0660-\u0669\u06F0-\u06F9]/.test(v)) return { msg: 'اكتب اسمك بالحروف فقط، دون أرقام.', node: f.name };
-      if (v.replace(/[\s.'\-]/g, '').length < 2) return { msg: 'الاسم قصير، اكتبه كاملاً.', node: f.name };
+      var letters = (v.match(LETTER) || []).length;
+      if (letters < 2) return { msg: letters ? 'الاسم قصير، اكتبه كاملاً.' : 'اكتب اسمك بالحروف.', node: f.name };
       return null;
     },
     tel: function () {
       var r = phoneE164();
       if (!r.error) return null;
       if (r.error === 'empty') return { msg: 'اكتب رقم جوالك.', node: f.tel };
-      if (r.error === 'chars') return { msg: 'رقم الجوال يقبل الأرقام فقط.', node: f.tel };
+      if (r.error === 'chars') return { msg: 'اكتب رقم الجوال بالأرقام فقط.', node: f.tel };
       if (r.error === 'cc') return { msg: 'مفتاح الدولة غير صحيح. اكتبه بهذا الشكل: \u2066+966\u2069', node: f.cc };
-      if (r.error === 'sa') return { msg: 'رقم الجوال السعودي 9 أرقام ويبدأ بـ 5، مثل 5XXXXXXXX.', node: f.tel };
+      if (r.error === 'sa') return { msg: 'رقم الجوال السعودي 9 أرقام ويبدأ بـ 5، مثل \u20665XXXXXXXX\u2069', node: f.tel };
       return { msg: 'تأكد من الرقم ومفتاح الدولة.', node: f.tel };
     }
   };
@@ -998,8 +1028,8 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
   }
   function summaryText(n) {
     if (!n) return '';
-    if (n === 1) return 'بقي حقل واحد يحتاج إلى تصحيح.';
-    return 'بقي حقلان يحتاجان إلى تصحيح.';
+    if (n === 1) return 'حقل واحد يحتاج إلى تصحيح.';
+    return 'حقلان يحتاجان إلى تصحيح.';
   }
   function showErrors(list) {
     el.errsum.textContent = '';
@@ -1085,7 +1115,7 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
 
   el.form.addEventListener('submit', function (e) {
     e.preventDefault();
-    if (busy) return;
+    if (busy || state !== 'open') return;
     setFormErr('');
     var list = validateAll();
     if (list.length) { showErrors(list); return; }
@@ -1114,8 +1144,8 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
             expiresAt: typeof data.expiresAt === 'string' ? data.expiresAt : ''
           };
           saveRecord(rec);
-          setBusy(false);
-          fillVoucher(rec, { existing: data.existing === true, sample: false });
+          /* The button stays busy until the voucher is painted, so a second tap cannot send again */
+          fillVoucher(rec, { existing: data.existing === true, sample: MOCK });
           revealVoucher(data.existing === true);
           return;
         }
@@ -1162,7 +1192,7 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
   });
 
   el.reset.addEventListener('click', function () {
-    if (!sampleShown) forgetRecord();
+    if (!sampleShown || MOCK) forgetRecord();
     el.form.reset();
     KEYS.forEach(function (k) { setErr(k, null); });
     el.errsum.textContent = '';
@@ -1186,7 +1216,7 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
     showVoucherNow({ name: SAMPLE_NAME, code: SAMPLE_CODE, expiresAt: monthFromToday() }, { existing: false, sample: true });
   } else {
     var saved = loadSaved();
-    if (saved) showVoucherNow(saved, { existing: false, sample: false });
+    if (saved) showVoucherNow(saved, { existing: false, sample: MOCK });
     else instant('invite');
   }
 })();
