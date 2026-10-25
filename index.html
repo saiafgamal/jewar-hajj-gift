@@ -1065,7 +1065,7 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
     el.submit.disabled = on;
     el.submit.classList.toggle('rq-is-busy', on);
     el.form.setAttribute('aria-busy', on ? 'true' : 'false');
-    el.submitT.textContent = on ? 'جارٍ التسجيل...' : 'أظهر كود الخصم';
+    el.submitT.textContent = on ? 'جار التسجيل...' : 'أظهر كود الخصم';
   }
 
   function send(payload) {
@@ -1130,7 +1130,7 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
       source: SOURCE
     };
     setBusy(true);
-    announce('جارٍ التسجيل...');
+    announce('جار التسجيل...');
 
     /* Honeypot filled: an automated submit. Send nothing. */
     if (el.hp && el.hp.value) { window.setTimeout(function () { fail(); }, 900); return; }
