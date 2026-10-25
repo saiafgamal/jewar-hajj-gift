@@ -1217,7 +1217,8 @@ const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3
   } else {
     var saved = loadSaved();
     if (saved) showVoucherNow(saved, { existing: false, sample: MOCK });
-    else instant('invite');
+    /* ?start=open comes from the Jewar page's backup link: the visitor already chose to open the gift, so skip the invite */
+    else instant(params.start === 'open' ? 'open' : 'invite');
   }
 })();
 </script>
