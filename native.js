@@ -10,7 +10,7 @@
   if (window.RawnaqGift) return;
 
   var ENDPOINT = 'https://script.google.com/macros/s/AKfycbx91TIGjZv-v5Komo403l3YyY5wunEhsKNXVkVONbXjssBh7UVnA_Wcxxmv3ZCQQ2CK/exec';
-  var VERSION = '2026-10-26.2';
+  var VERSION = '2026-10-26.3';
   var STORE_KEY = 'rawnaq-gift-v1';
   var SOURCE = 'hajj-expo-2026';
   var TIMEOUT_MS = 15000;
@@ -566,12 +566,14 @@
     errOut = { name: q('#rq-name-err'), tel: q('#rq-tel-err') };
     wrap = { name: q('#rq-f-name'), tel: q('#rq-f-tel') };
 
-    /* The envelope: a tap on either label (or Space on the checkbox) runs the scripted open; it can no longer be closed */
+    /* The envelope: a tap on either label (or Space / a screen reader on the checkbox) runs the scripted open; it can no longer be closed */
     root.addEventListener('click', function (e) {
       var t = e.target;
       var lbl = t && t.closest ? t.closest('label[for="rq-o"]') : null;
-      if (lbl || t === el.cb) {
-        e.preventDefault();
+      if (lbl) { e.preventDefault(); openEnvelope(); return; }
+      if (t === el.cb) {
+        /* The browser has already checked the box; cancelling now would uncheck it while the state says open */
+        if (state !== 'invite') { e.preventDefault(); return; }
         openEnvelope();
       }
     });
